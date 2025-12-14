@@ -82,7 +82,7 @@ const Hero: React.FC = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-7xl font-sans font-bold text-white leading-[1.1] tracking-tight mb-4 md:mb-6"
+            className="text-5xl sm:text-5xl md:text-5xl lg:text-5xl xl:text-5xl font-sans font-bold text-white leading-[1.1] tracking-tight mb-4 md:mb-6"
           >
             Fueling Bharat's <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-300 to-white">
