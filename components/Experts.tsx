@@ -31,25 +31,25 @@ const Experts: React.FC = () => {
   ];
 
   return (
-    <section id="experts" className="py-24 bg-white scroll-mt-20">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-12">
+    <section id="experts" className="py-16 sm:py-20 md:py-24 bg-white scroll-mt-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="flex flex-col md:flex-row justify-between items-end mb-8 sm:mb-12">
             <div>
-                <span className="text-pw-blue font-bold tracking-wider uppercase text-sm">Our Experts</span>
-                <h2 className="text-4xl font-bold text-slate-900 mt-2">Meet the Execution Team</h2>
+                <span className="text-pw-blue font-bold tracking-wider uppercase text-xs sm:text-sm">Our Experts</span>
+                <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mt-2">Meet the Execution Team</h2>
             </div>
-            <p className="text-slate-500 max-w-sm mt-4 md:mt-0">
+            <p className="text-sm sm:text-base text-slate-500 max-w-sm mt-4 md:mt-0">
                 Backed by the extensive PW network, our experts bring battlefield experience to your startup.
             </p>
         </div>
 
         {/* Tabs */}
-        <div className="flex flex-wrap gap-4 mb-12 border-b border-slate-200">
+        <div className="flex flex-wrap gap-3 sm:gap-4 mb-8 sm:mb-12 border-b border-slate-200">
           {tabs.map((tab) => (
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
-              className={`px-6 py-3 font-bold text-sm transition-all duration-300 relative ${
+              className={`px-4 sm:px-6 py-2 sm:py-3 font-bold text-xs sm:text-sm transition-all duration-300 relative ${
                 activeTab === tab.id
                   ? 'text-pw-blue'
                   : 'text-slate-500 hover:text-slate-700'
@@ -77,7 +77,7 @@ const Experts: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
-            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8"
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-8"
           >
             {getActiveExperts().map((expert, index) => (
               <motion.div
@@ -103,8 +103,8 @@ const Experts: React.FC = () => {
                     ))}
                   </div>
                 </div>
-                <h3 className="text-xl font-bold text-slate-900">{expert.name}</h3>
-                <p className="text-pw-blue font-medium text-sm">{expert.role}</p>
+                <h3 className="text-lg sm:text-xl font-bold text-slate-900">{expert.name}</h3>
+                <p className="text-pw-blue font-medium text-xs sm:text-sm">{expert.role}</p>
               </motion.div>
             ))}
           </motion.div>

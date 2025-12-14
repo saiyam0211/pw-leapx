@@ -35,10 +35,10 @@ const Navbar: React.FC = () => {
           : 'bg-transparent border-transparent py-6'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-3 group" onClick={handleLinkClick}>
-          <div className="w-24 h-16 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+        <Link to="/" className="flex items-center gap-2 sm:gap-3 group" onClick={handleLinkClick}>
+          <div className="w-20 h-12 sm:w-24 sm:h-16 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
             <img 
               src="/PW_Leap_X_fxqdkj.svg" 
               alt="PW LeapX"
@@ -48,7 +48,7 @@ const Navbar: React.FC = () => {
         </Link>
 
         {/* Desktop Nav */}
-        <div className="hidden lg:flex items-center gap-8">
+        <div className="hidden lg:flex items-center gap-6 xl:gap-8">
           {navLinks.map((link) => {
             const isHashLink = link.href.startsWith('#');
             if (isHashLink) {
@@ -80,28 +80,28 @@ const Navbar: React.FC = () => {
 
         {/* CTA Button */}
         <div className="hidden lg:block">
-          <a
-            href="#booking"
-            onClick={(e) => {
-              if (location.pathname !== '/') {
-                e.preventDefault();
-                window.location.href = '/#booking';
-                setTimeout(() => {
-                  const element = document.getElementById('booking');
-                  if (element) {
-                    element.scrollIntoView({ behavior: 'smooth' });
-                  }
-                }, 100);
-              }
-            }}
-            className={`flex items-center gap-2 px-6 py-2.5 rounded-full text-sm font-bold transition-all duration-300 ${
-              isScrolled
-                ? 'bg-pw-blue text-white hover:bg-blue-800 shadow-md hover:shadow-xl hover:shadow-blue-900/20'
-                : location.pathname === '/' ? 'bg-white text-slate-900 hover:bg-slate-100 hover:scale-105' : 'bg-pw-blue text-white hover:bg-blue-800 shadow-md hover:shadow-xl hover:shadow-blue-900/20'
-            }`}
-          >
-            Book Appointment <ArrowRight className="w-4 h-4" />
-          </a>
+            <a
+              href="#booking"
+              onClick={(e) => {
+                if (location.pathname !== '/') {
+                  e.preventDefault();
+                  window.location.href = '/#booking';
+                  setTimeout(() => {
+                    const element = document.getElementById('booking');
+                    if (element) {
+                      element.scrollIntoView({ behavior: 'smooth' });
+                    }
+                  }, 100);
+                }
+              }}
+              className={`flex items-center gap-2 px-4 xl:px-6 py-2 xl:py-2.5 rounded-full text-xs xl:text-sm font-bold transition-all duration-300 ${
+                isScrolled
+                  ? 'bg-pw-blue text-white hover:bg-blue-800 shadow-md hover:shadow-xl hover:shadow-blue-900/20'
+                  : location.pathname === '/' ? 'bg-white text-slate-900 hover:bg-slate-100 hover:scale-105' : 'bg-pw-blue text-white hover:bg-blue-800 shadow-md hover:shadow-xl hover:shadow-blue-900/20'
+              }`}
+            >
+              Book Appointment <ArrowRight className="w-3 h-3 xl:w-4 xl:h-4" />
+            </a>
         </div>
 
         {/* Mobile Toggle */}

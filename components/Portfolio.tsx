@@ -8,10 +8,10 @@ const Portfolio: React.FC = () => {
   const marqueeBrands = [...BRANDS, ...BRANDS, ...BRANDS, ...BRANDS];
 
   return (
-    <section id="portfolio" className="py-24 bg-slate-50 border-t border-slate-100 overflow-hidden scroll-mt-20">
-      <div className="max-w-7xl mx-auto px-6 mb-12 text-center">
+    <section id="portfolio" className="py-16 sm:py-20 md:py-24 bg-slate-50 border-t border-slate-100 overflow-hidden scroll-mt-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 mb-8 sm:mb-12 text-center">
           <span className="text-blue-500 font-bold tracking-widest uppercase text-xs">Portfolio</span>
-          <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mt-2">Products We've Built / Brands We've Supported</h2>
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-slate-900 mt-2">Products We've Built / Brands We've Supported</h2>
       </div>
 
       <div className="relative w-full">
@@ -21,7 +21,7 @@ const Portfolio: React.FC = () => {
 
         <div className="flex overflow-hidden">
              <motion.div 
-                className="flex items-center gap-16 md:gap-24 whitespace-nowrap"
+                className="flex items-center gap-12 sm:gap-16 md:gap-20 lg:gap-24 whitespace-nowrap"
                 animate={{ x: ["0%", "-50%"] }} 
                 transition={{ 
                     x: {
@@ -38,11 +38,11 @@ const Portfolio: React.FC = () => {
                         className="flex items-center justify-center opacity-60 hover:opacity-100 transition-opacity duration-300 cursor-default shrink-0"
                      >
                          {brand.logoUrl ? (
-                            <div className="h-16 md:h-20 w-auto flex items-center justify-center">
+                            <div className="h-12 sm:h-14 md:h-16 lg:h-20 w-auto flex items-center justify-center">
                                 <img 
                                     src={brand.logoUrl} 
                                     alt={brand.name}
-                                    className="h-full w-auto object-contain max-w-[200px]"
+                                    className="h-full w-auto object-contain max-w-[150px] sm:max-w-[180px] md:max-w-[200px]"
                                 />
                             </div>
                          ) : (

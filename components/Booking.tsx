@@ -24,22 +24,22 @@ const Booking: React.FC = () => {
   };
 
   return (
-    <section id="booking" className="py-24 bg-slate-50 relative scroll-mt-20">
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="bg-slate-900 rounded-[2.5rem] overflow-hidden shadow-2xl flex flex-col md:flex-row min-h-[600px]">
+    <section id="booking" className="py-16 sm:py-20 md:py-24 bg-slate-50 relative scroll-mt-20">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+        <div className="bg-slate-900 rounded-2xl sm:rounded-[2.5rem] overflow-hidden shadow-2xl flex flex-col md:flex-row min-h-[500px] sm:min-h-[600px]">
           
           {/* Left: Info */}
-          <div className="p-10 md:p-16 md:w-5/12 flex flex-col justify-between text-white relative overflow-hidden bg-gradient-to-br from-slate-900 to-slate-800">
+          <div className="p-6 sm:p-10 md:p-12 lg:p-16 md:w-5/12 flex flex-col justify-between text-white relative overflow-hidden bg-gradient-to-br from-slate-900 to-slate-800">
              {/* Abstract background blobs */}
              <div className="absolute top-0 right-0 w-64 h-64 bg-blue-600/20 rounded-full blur-3xl -mr-16 -mt-16 animate-pulse-slow"></div>
              <div className="absolute bottom-0 left-0 w-64 h-64 bg-indigo-600/10 rounded-full blur-3xl -ml-16 -mb-16"></div>
              
              <div className="relative z-10">
-                <span className="inline-block py-1 px-3 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-300 text-xs font-bold uppercase tracking-wider mb-6">
+                <span className="inline-block py-1 px-3 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-300 text-xs font-bold uppercase tracking-wider mb-4 sm:mb-6">
                     Book Appointment
                 </span>
-                <h3 className="text-3xl md:text-4xl font-bold mb-4 leading-tight">Schedule a Call <br/>Instantly</h3>
-                <p className="text-slate-300 text-lg mb-8 leading-relaxed">
+                <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 leading-tight">Schedule a Call <br/>Instantly</h3>
+                <p className="text-slate-300 text-base sm:text-lg mb-6 sm:mb-8 leading-relaxed">
                   Schedule a free 30-minute evaluation call with our strategy leads. We'll audit your idea and propose an execution roadmap.
                 </p>
                 <ul className="space-y-5 text-slate-300">
@@ -70,7 +70,7 @@ const Booking: React.FC = () => {
           </div>
 
           {/* Right: Functional Form */}
-          <div className="bg-white p-10 md:p-16 md:w-7/12 relative">
+          <div className="bg-white p-6 sm:p-10 md:p-12 lg:p-16 md:w-7/12 relative">
              <AnimatePresence mode='wait'>
                 {status === 'success' ? (
                     <motion.div 
@@ -101,7 +101,7 @@ const Booking: React.FC = () => {
                         onSubmit={handleSubmit}
                     >
                         <div>
-                            <h4 className="text-2xl font-bold text-slate-900 mb-6">Enter your details</h4>
+                            <h4 className="text-xl sm:text-2xl font-bold text-slate-900 mb-4 sm:mb-6">Enter your details</h4>
                         </div>
                         <div>
                             <label className="block text-sm font-bold text-slate-700 mb-2">Full Name</label>

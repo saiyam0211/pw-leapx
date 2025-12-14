@@ -26,7 +26,7 @@ const ServiceDetail: React.FC = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 overflow-hidden">
+      <section className="relative pt-24 sm:pt-28 md:pt-32 pb-12 sm:pb-16 md:pb-20 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 overflow-hidden">
         {/* Background Image */}
         {service.heroImage && (
           <div className="absolute inset-0 z-0">
@@ -71,11 +71,11 @@ const ServiceDetail: React.FC = () => {
               </span>
             </div>
 
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-4 sm:mb-6 leading-tight">
               {service.title}
             </h1>
 
-            <p className="text-xl md:text-2xl text-slate-300 leading-relaxed mb-8">
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-slate-300 leading-relaxed mb-6 sm:mb-8">
               {service.overview || service.description}
             </p>
 
@@ -91,7 +91,7 @@ const ServiceDetail: React.FC = () => {
                   }
                 }, 100);
               }}
-              className="inline-flex items-center gap-3 px-8 py-4 bg-pw-blue hover:bg-blue-700 text-white rounded-full font-bold text-lg transition-all shadow-[0_0_20px_rgba(30,58,138,0.3)] hover:shadow-[0_0_30px_rgba(30,58,138,0.5)] hover:-translate-y-1"
+              className="inline-flex items-center gap-2 sm:gap-3 px-6 sm:px-8 py-3 sm:py-4 bg-pw-blue hover:bg-blue-700 text-white rounded-full font-bold text-base sm:text-lg transition-all shadow-[0_0_20px_rgba(30,58,138,0.3)] hover:shadow-[0_0_30px_rgba(30,58,138,0.5)] hover:-translate-y-1"
             >
               Book Consultation
               <ArrowRight className="w-5 h-5" />
@@ -102,24 +102,24 @@ const ServiceDetail: React.FC = () => {
 
       {/* Features Section */}
       {service.features && service.features.length > 0 && (
-        <section className="py-24 bg-white">
-          <div className="max-w-7xl mx-auto px-6">
+        <section className="py-16 sm:py-20 md:py-24 bg-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="text-center mb-16"
+              className="text-center mb-12 sm:mb-16"
             >
-              <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
+              <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-3 sm:mb-4">
                 What We Deliver
               </h2>
-              <p className="text-slate-600 text-lg max-w-2xl mx-auto">
+              <p className="text-slate-600 text-base sm:text-lg max-w-2xl mx-auto">
                 Comprehensive features designed to accelerate your startup's growth
               </p>
             </motion.div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
               {service.features.map((feature, index) => (
                 <motion.div
                   key={index}
@@ -145,18 +145,18 @@ const ServiceDetail: React.FC = () => {
       )}
 
       {/* CTA Section */}
-      <section className="py-24 bg-gradient-to-br from-slate-50 to-white">
-        <div className="max-w-4xl mx-auto px-6 text-center">
+      <section className="py-16 sm:py-20 md:py-24 bg-gradient-to-br from-slate-50 to-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
+            <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-4 sm:mb-6">
               Ready to Get Started?
             </h2>
-            <p className="text-xl text-slate-600 mb-10 leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl text-slate-600 mb-8 sm:mb-10 leading-relaxed">
               Let's discuss how {service.title} can accelerate your startup's growth. Schedule a free consultation with our experts.
             </p>
             <div className="flex flex-col sm:flex-row gap-5 justify-center">
@@ -172,7 +172,7 @@ const ServiceDetail: React.FC = () => {
                     }
                   }, 100);
                 }}
-                className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-pw-blue hover:bg-blue-700 text-white rounded-full font-bold text-lg transition-all shadow-lg hover:shadow-xl hover:-translate-y-1"
+                className="inline-flex items-center justify-center gap-2 sm:gap-3 px-6 sm:px-8 py-3 sm:py-4 bg-pw-blue hover:bg-blue-700 text-white rounded-full font-bold text-base sm:text-lg transition-all shadow-lg hover:shadow-xl hover:-translate-y-1"
               >
                 Book Free Consultation
                 <ArrowRight className="w-5 h-5" />

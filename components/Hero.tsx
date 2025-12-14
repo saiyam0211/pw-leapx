@@ -4,7 +4,7 @@ import { ArrowRight, PlayCircle, Zap } from 'lucide-react';
 
 const Hero: React.FC = () => {
   return (
-    <section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden bg-slate-950 pt-28 pb-16 lg:py-0">
+    <section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden bg-slate-950 pt-24 sm:pt-28 pb-12 sm:pb-16 lg:py-0">
       {/* Background with Blur Overlay */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950"></div>
@@ -82,7 +82,7 @@ const Hero: React.FC = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-5xl md:text-6xl lg:text-7xl font-sans font-bold text-white leading-[1.1] tracking-tight mb-6"
+            className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-7xl font-sans font-bold text-white leading-[1.1] tracking-tight mb-4 md:mb-6"
           >
             Fueling Bharat's <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-300 to-white">
@@ -96,7 +96,7 @@ const Hero: React.FC = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-lg md:text-xl text-slate-400 max-w-xl leading-relaxed mb-10 font-light"
+            className="text-base sm:text-lg md:text-lg lg:text-xl text-slate-400 max-w-xl leading-relaxed mb-6 md:mb-10 font-light"
           >
             PW LeapX is India's most reliable execution partner, empowering startups with tech and strategic solutions…
           </motion.p>
@@ -109,14 +109,14 @@ const Hero: React.FC = () => {
           >
             <a
               href="#services"
-              className="group flex items-center justify-center gap-3 px-8 py-4 bg-pw-blue hover:bg-blue-700 text-white rounded-full font-bold text-lg transition-all shadow-[0_0_20px_rgba(30,58,138,0.3)] hover:shadow-[0_0_30px_rgba(30,58,138,0.5)] hover:-translate-y-1"
+              className="group flex items-center justify-center gap-2 sm:gap-3 px-6 sm:px-8 py-3 sm:py-4 bg-pw-blue hover:bg-blue-700 text-white rounded-full font-bold text-base sm:text-lg transition-all shadow-[0_0_20px_rgba(30,58,138,0.3)] hover:shadow-[0_0_30px_rgba(30,58,138,0.5)] hover:-translate-y-1"
             >
               Explore LeapX
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
             </a>
             <a
               href="#booking"
-              className="flex items-center justify-center gap-3 px-8 py-4 bg-white/5 border border-white/10 hover:bg-white/10 text-white rounded-full font-medium text-lg transition-all backdrop-blur-sm hover:-translate-y-1"
+              className="flex items-center justify-center gap-2 sm:gap-3 px-6 sm:px-8 py-3 sm:py-4 bg-white/5 border border-white/10 hover:bg-white/10 text-white rounded-full font-medium text-base sm:text-lg transition-all backdrop-blur-sm hover:-translate-y-1"
             >
               Book Appointment
             </a>

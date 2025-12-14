@@ -4,7 +4,7 @@ import { CheckCircle2 } from 'lucide-react';
 
 const About: React.FC = () => {
   return (
-    <section id="about" className="py-24 md:py-32 bg-white relative overflow-hidden scroll-mt-20">
+    <section id="about" className="py-16 sm:py-20 md:py-24 lg:py-32 bg-white relative overflow-hidden scroll-mt-20">
         {/* Background Decorative Line */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-px h-32 bg-gradient-to-b from-transparent to-slate-200"></div>
 
@@ -19,24 +19,24 @@ const About: React.FC = () => {
             transition={{ duration: 0.8 }}
           >
             <span className="inline-block py-1 px-3 rounded bg-blue-50 text-pw-blue font-bold tracking-wider uppercase text-xs mb-4">Who We Are</span>
-            <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6 leading-[1.15]">
+            <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-4 md:mb-6 leading-[1.15]">
               About <span className="text-transparent bg-clip-text bg-gradient-to-r from-pw-blue to-blue-500">PW LeapX</span>
             </h2>
-            <div className="space-y-8 text-slate-600 text-lg leading-relaxed mb-8">
+            <div className="space-y-6 md:space-y-8 text-slate-600 text-base sm:text-lg leading-relaxed mb-6 md:mb-8">
               <div>
-                <h3 className="font-bold text-slate-900 text-xl mb-3">Who We Are</h3>
+                <h3 className="font-bold text-slate-900 text-lg sm:text-xl mb-2 sm:mb-3">Who We Are</h3>
                 <p>
                   Execution-first initiative by PW School of Startups.
                 </p>
               </div>
               <div>
-                <h3 className="font-bold text-slate-900 text-xl mb-3">Our Vision</h3>
+                <h3 className="font-bold text-slate-900 text-lg sm:text-xl mb-2 sm:mb-3">Our Vision</h3>
                 <p>
                   To become India's most trusted execution partner, empowering every entrepreneur with the tools, technology, and strategic support needed to transform ideas into scalable businesses.
                 </p>
               </div>
               <div>
-                <h3 className="font-bold text-slate-900 text-xl mb-3">Our Mission</h3>
+                <h3 className="font-bold text-slate-900 text-lg sm:text-xl mb-2 sm:mb-3">Our Mission</h3>
                 <p>
                   To bridge the gap between vision and reality by providing world-class tech and business solutions, backed by the expertise and network of Physics Wallah, making execution accessible to Bharat's next generation of founders.
                 </p>
@@ -93,7 +93,7 @@ const About: React.FC = () => {
              className="relative"
           >
              <div className="absolute -inset-4 bg-slate-50 rounded-3xl transform rotate-3 -z-10"></div>
-             <div className="relative rounded-2xl overflow-hidden shadow-2xl h-[500px] group">
+             <div className="relative rounded-2xl overflow-hidden shadow-2xl h-[400px] sm:h-[450px] md:h-[500px] group">
                 <img 
                     src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1632&q=80" 
                     alt="Team collaboration" 
