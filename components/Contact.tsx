@@ -69,7 +69,7 @@ const Contact: React.FC = () => {
             </div>
           </motion.div>
 
-          {/* Right: Book Appointment Card */}
+          {/* Right: CTA Card */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -86,7 +86,7 @@ const Contact: React.FC = () => {
               </h3>
               
               <p className="text-slate-600 text-base sm:text-lg mb-6 sm:mb-8 leading-relaxed">
-                Schedule a free consultation with our experts and discover how we can help transform your startup idea into reality.
+                Get in touch with our team and discover how we can help transform your startup idea into reality.
               </p>
               
               <a
@@ -100,7 +100,7 @@ const Contact: React.FC = () => {
                 }}
                 className="inline-flex items-center gap-2 sm:gap-3 bg-pw-blue text-white font-bold px-6 sm:px-8 py-3 sm:py-4 rounded-xl hover:bg-blue-700 transition-all shadow-md hover:shadow-lg hover:-translate-y-1 group text-sm sm:text-base"
               >
-                Book an Appointment
+                Get in Touch!
                 <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
               </a>
             </div>

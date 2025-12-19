@@ -358,15 +358,39 @@ export const BRANDS: BrandItem[] = [
   },
   { 
     id: 'br5', 
-    name: 'PW Skills', 
-    category: 'EdTech',
-    logoUrl: 'https://jobs.pwskills.com/images/PWSkills-main.png'
+    name: 'AnveVoice', 
+    category: 'AI & Voice',
+    logoUrl: '/company_logos/AnveVoice Logo.png'
   },
   { 
     id: 'br6', 
-    name: 'CuriousJr', 
-    category: 'EdTech',
-    logoUrl: 'https://static.pw.live/production-curiousjr-fundoo/static/images/landing-page/cjr-black-logo.webp'
+    name: 'Apex', 
+    category: 'Technology',
+    logoUrl: '/company_logos/Apex Logo.png'
+  },
+  { 
+    id: 'br7', 
+    name: 'BFR', 
+    category: 'Technology',
+    logoUrl: '/company_logos/BFR logo.png'
+  },
+  { 
+    id: 'br8', 
+    name: 'Sahiloan', 
+    category: 'FinTech',
+    logoUrl: '/company_logos/Sahiloan logo.png'
+  },
+  { 
+    id: 'br9', 
+    name: 'Xperio', 
+    category: 'Technology',
+    logoUrl: '/company_logos/Xperio logo.png'
+  },
+  { 
+    id: 'br10', 
+    name: 'Your Lab', 
+    category: 'HealthTech',
+    logoUrl: '/company_logos/Your Lab logo.png'
   },
 ];
 

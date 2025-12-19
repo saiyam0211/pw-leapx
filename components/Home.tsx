@@ -1,7 +1,9 @@
 import React from 'react';
 import Hero from './Hero';
 import About from './About';
+import TeamQuote from './TeamQuote';
 import Services from './Services';
+import ProjectsPreview from './ProjectsPreview';
 import Process from './Process';
 import Experts from './Experts';
 import Portfolio from './Portfolio';
@@ -14,7 +16,9 @@ const Home: React.FC = () => {
     <main>
       <Hero />
       <About />
+      <TeamQuote />
       <Services />
+      <ProjectsPreview />
       <Process />
       <Experts />
       <Portfolio />

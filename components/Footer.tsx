@@ -13,9 +13,14 @@ const Footer: React.FC = () => {
           
           {/* Brand */}
           <div className="col-span-1 md:col-span-2 lg:col-span-1">
-             <div className="flex items-center gap-2 mb-4 sm:mb-6">
-                <div className="w-8 h-8 bg-pw-blue rounded-lg flex items-center justify-center text-white font-bold text-sm sm:text-base">P</div>
-                <span className="text-white font-bold text-lg sm:text-xl">PW LeapX</span>
+             <div className="mb-4 sm:mb-6">
+               <div className="w-32 sm:w-40">
+                 <img
+                   src="/PW_Leap_X_White.svg"
+                   alt="PW LeapX"
+                   className="w-full h-auto object-contain"
+                 />
+               </div>
              </div>
              <p className="text-xs sm:text-sm leading-relaxed mb-4 sm:mb-6 max-w-xs">
                Empowering India's next unicorn founders with reliable execution, powered by Physics Wallah.
@@ -43,7 +48,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-2 sm:space-y-3 text-xs sm:text-sm">
                 <li><a href="#about" className="hover:text-pw-blue transition-colors">About PW LeapX</a></li>
                 <li><a href="#experts" className="hover:text-pw-blue transition-colors">Our Experts</a></li>
-                <li><a href="#booking" className="hover:text-pw-blue transition-colors">Book Appointment</a></li>
+                <li><a href="#booking" className="hover:text-pw-blue transition-colors">Get in Touch!</a></li>
                 <li><a href="#get-in-touch" className="hover:text-pw-blue transition-colors">Get In Touch</a></li>
                 <li><a href="#faq" className="hover:text-pw-blue transition-colors">FAQs</a></li>
             </ul>

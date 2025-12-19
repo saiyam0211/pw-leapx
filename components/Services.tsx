@@ -9,7 +9,7 @@ const Services: React.FC = () => {
     <section id="services" className="py-16 sm:py-20 md:py-24 bg-slate-50 scroll-mt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         
-        <div className="text-center mb-12 sm:mb-16 max-w-3xl mx-auto">
+        <div className="text-center mb-12 sm:mb-16 max-w-4xl mx-auto">
           <span className="text-pw-blue font-bold tracking-wider uppercase text-xs sm:text-sm">Our Expertise</span>
           <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mt-2 mb-3 sm:mb-4">Comprehensive Execution Support</h2>
           <p className="text-slate-600 text-base sm:text-lg">
@@ -18,8 +18,8 @@ const Services: React.FC = () => {
         </div>
 
         {/* Tech Category */}
-        <div className="mb-12">
-            <h3 className="text-xl sm:text-2xl font-bold text-slate-800 mb-6 sm:mb-8 border-b border-slate-200 pb-2 inline-block">Tech</h3>
+        <div className="mb-12 ">
+            <h3 className="text-xl  sm:text-2xl font-bold text-slate-800 mb-6 sm:mb-8 border-b border-slate-200 pb-2 inline-block">Tech</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {SERVICES.filter(s => s.category === 'Tech').map((service, index) => (
                 <ServiceCard key={service.id} service={service} index={index} />

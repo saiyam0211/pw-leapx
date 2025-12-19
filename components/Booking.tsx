@@ -36,7 +36,7 @@ const Booking: React.FC = () => {
              
              <div className="relative z-10">
                 <span className="inline-block py-1 px-3 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-300 text-xs font-bold uppercase tracking-wider mb-4 sm:mb-6">
-                    Book Appointment
+                    Get in Touch!
                 </span>
                 <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 leading-tight">Schedule a Call <br/>Instantly</h3>
                 <p className="text-slate-300 text-base sm:text-lg mb-6 sm:mb-8 leading-relaxed">

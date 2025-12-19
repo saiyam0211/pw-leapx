@@ -8,7 +8,7 @@ const About: React.FC = () => {
         {/* Background Decorative Line */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-px h-32 bg-gradient-to-b from-transparent to-slate-200"></div>
 
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-[85rem] mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           
           {/* Left Content */}
@@ -26,19 +26,21 @@ const About: React.FC = () => {
               <div>
                 <h3 className="font-bold text-slate-900 text-lg sm:text-xl mb-2 sm:mb-3">Who We Are</h3>
                 <p>
-                  Execution-first initiative by PW School of Startups.
+                LeapX acts as the extended execution arm for your venture, turning ideas into high-quality products and growth-ready brands. Led by top experts in tech and management, we bring end-to-end execution across software development, design, GTM, branding, and digital marketing.  
+                {/* <br/><br/><i>We don’t just deliver projects.</i>
+                <br/><b>We help you build, launch, and scale with confidence.</b> */}
                 </p>
               </div>
               <div>
                 <h3 className="font-bold text-slate-900 text-lg sm:text-xl mb-2 sm:mb-3">Our Vision</h3>
                 <p>
-                  To become India's most trusted execution partner, empowering every entrepreneur with the tools, technology, and strategic support needed to transform ideas into scalable businesses.
+                To empower ambitious founders and businesses by becoming the most trusted execution partner for building scalable products and high-growth brands, driven by expertise, innovation, and uncompromising quality.
                 </p>
               </div>
               <div>
                 <h3 className="font-bold text-slate-900 text-lg sm:text-xl mb-2 sm:mb-3">Our Mission</h3>
                 <p>
-                  To bridge the gap between vision and reality by providing world-class tech and business solutions, backed by the expertise and network of Physics Wallah, making execution accessible to Bharat's next generation of founders.
+                To deliver impactful execution across software development, design, GTM, branding, and digital marketing, powered by industry experts who work as the extended execution arm of every venture we partner with. We focus on speed, precision, and cost-effective solutions that drive real, measurable growth.
                 </p>
               </div>
             </div>

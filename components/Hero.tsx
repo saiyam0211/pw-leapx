@@ -82,14 +82,17 @@ const Hero: React.FC = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-5xl sm:text-5xl md:text-5xl lg:text-5xl xl:text-5xl font-sans font-bold text-white leading-[1.1] tracking-tight mb-4 md:mb-6"
+            className="text-5xl sm:text-5xl md:text-5xl lg:text-5xl xl:text-5xl font-sans font-bold text-white mb-4 md:mb-6 leading-tight gap-2"
           >
-            Fueling Bharat's <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-300 to-white">
-              Entrepreneurs
+            Engineering Products,
+            <br className="hidden sm:block" />
+            <span className="block h-2"></span>
+            Building
+            <span className="text-transparent mt-1 bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-300 to-white ml-2">
+              Brands
             </span>
-            <br />
-            <span className="text-white">with Execution Support</span>
+            <br className="hidden sm:block" />
+            <span className="block h-4"></span>
           </motion.h1>
 
           <motion.p
@@ -98,8 +101,7 @@ const Hero: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-base sm:text-lg md:text-lg lg:text-xl text-slate-400 max-w-xl leading-relaxed mb-6 md:mb-10 font-light"
           >
-            PW LeapX is India's most reliable execution partner, empowering startups with tech and strategic solutions…
-          </motion.p>
+            PW LeapX is India's most reliable execution partner, empowering startups with tech and strategic solutions, acting as their extended arm for growth.          </motion.p>
 
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -118,7 +120,7 @@ const Hero: React.FC = () => {
               href="#booking"
               className="flex items-center justify-center gap-2 sm:gap-3 px-6 sm:px-8 py-3 sm:py-4 bg-white/5 border border-white/10 hover:bg-white/10 text-white rounded-full font-medium text-base sm:text-lg transition-all backdrop-blur-sm hover:-translate-y-1"
             >
-              Book Appointment
+              Get in Touch
             </a>
           </motion.div>
 

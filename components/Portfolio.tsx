@@ -8,7 +8,7 @@ const Portfolio: React.FC = () => {
   const marqueeBrands = [...BRANDS, ...BRANDS, ...BRANDS, ...BRANDS];
 
   return (
-    <section id="portfolio" className="py-16 sm:py-20 md:py-24 bg-slate-50 border-t border-slate-100 overflow-hidden scroll-mt-20">
+    <section id="portfolio" className="py-16 sm:py-20 md:py-24 border-t border-slate-100 overflow-hidden scroll-mt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 mb-8 sm:mb-12 text-center">
           <span className="text-blue-500 font-bold tracking-widest uppercase text-xs">Portfolio</span>
           <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-slate-900 mt-2">Products We've Built / Brands We've Supported</h2>
@@ -16,8 +16,8 @@ const Portfolio: React.FC = () => {
 
       <div className="relative w-full">
         {/* Gradient Masks for fade effect */}
-        <div className="absolute left-0 top-0 bottom-0 w-24 md:w-40 bg-gradient-to-r from-slate-50 to-transparent z-10 pointer-events-none"></div>
-        <div className="absolute right-0 top-0 bottom-0 w-24 md:w-40 bg-gradient-to-l from-slate-50 to-transparent z-10 pointer-events-none"></div>
+        <div className="absolute left-0 top-0 bottom-0 w-24 md:w-40 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
+        <div className="absolute right-0 top-0 bottom-0 w-24 md:w-40 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
 
         <div className="flex overflow-hidden">
              <motion.div 

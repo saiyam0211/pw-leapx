@@ -27,20 +27,28 @@ const Navbar: React.FC = () => {
     setIsMobileMenuOpen(false);
   };
 
+  // Check if we're on projects page
+  const isProjectsPage = location.pathname === '/projects';
+
+  // Determine logo based on page and scroll state
+  const logoSrc = isProjectsPage 
+    ? '/PW_Leap_X_Black.svg'  // Always black on projects page
+    : (isScrolled ? '/PW_Leap_X_Black.svg' : '/PW_Leap_X_White.svg');
+
   return (
     <nav
       className={`fixed top-0 w-full z-50 transition-all duration-500 border-b ${
         isScrolled
-          ? 'bg-white/90 backdrop-blur-xl border-slate-200 py-3 shadow-sm'
-          : 'bg-transparent border-transparent py-6'
+          ? 'bg-white/90 backdrop-blur-xl border-slate-200 py-2 sm:py-3 shadow-sm'
+          : 'bg-transparent border-transparent py-4 sm:py-6'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2 sm:gap-3 group" onClick={handleLinkClick}>
           <div className="w-20 h-12 sm:w-24 sm:h-16 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
-            <img 
-              src="/PW_Leap_X_fxqdkj.svg" 
+            <img
+              src={logoSrc}
               alt="PW LeapX"
               className="w-full h-full object-contain"
             />
@@ -100,7 +108,7 @@ const Navbar: React.FC = () => {
                   : location.pathname === '/' ? 'bg-white text-slate-900 hover:bg-slate-100 hover:scale-105' : 'bg-pw-blue text-white hover:bg-blue-800 shadow-md hover:shadow-xl hover:shadow-blue-900/20'
               }`}
             >
-              Book Appointment <ArrowRight className="w-3 h-3 xl:w-4 xl:h-4" />
+              Get in Touch <ArrowRight className="w-3 h-3 xl:w-4 xl:h-4" />
             </a>
         </div>
 
@@ -141,7 +149,7 @@ const Navbar: React.FC = () => {
             className="mt-4 w-full bg-pw-blue text-white py-4 rounded-xl text-center font-bold shadow-lg shadow-blue-900/20 active:scale-95 transition-transform"
             onClick={handleLinkClick}
           >
-            Book Appointment
+            Get in Touch!
           </a>
         </div>
       </div>

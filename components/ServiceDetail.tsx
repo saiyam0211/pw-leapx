@@ -80,12 +80,12 @@ const ServiceDetail: React.FC = () => {
             </p>
 
             <Link
-              to="/#booking"
+              to="/#get-in-touch"
               onClick={(e) => {
                 e.preventDefault();
-                window.location.href = '/#booking';
+                window.location.href = '/#get-in-touch';
                 setTimeout(() => {
-                  const element = document.getElementById('booking');
+                  const element = document.getElementById('get-in-touch');
                   if (element) {
                     element.scrollIntoView({ behavior: 'smooth' });
                   }
@@ -93,7 +93,7 @@ const ServiceDetail: React.FC = () => {
               }}
               className="inline-flex items-center gap-2 sm:gap-3 px-6 sm:px-8 py-3 sm:py-4 bg-pw-blue hover:bg-blue-700 text-white rounded-full font-bold text-base sm:text-lg transition-all shadow-[0_0_20px_rgba(30,58,138,0.3)] hover:shadow-[0_0_30px_rgba(30,58,138,0.5)] hover:-translate-y-1"
             >
-              Book Consultation
+              Get in Touch!
               <ArrowRight className="w-5 h-5" />
             </Link>
           </motion.div>
@@ -161,12 +161,12 @@ const ServiceDetail: React.FC = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-5 justify-center">
               <Link
-                to="/#booking"
+                to="/#get-in-touch"
                 onClick={(e) => {
                   e.preventDefault();
-                  window.location.href = '/#booking';
+                  window.location.href = '/#get-in-touch';
                   setTimeout(() => {
-                    const element = document.getElementById('booking');
+                    const element = document.getElementById('get-in-touch');
                     if (element) {
                       element.scrollIntoView({ behavior: 'smooth' });
                     }
@@ -174,7 +174,7 @@ const ServiceDetail: React.FC = () => {
                 }}
                 className="inline-flex items-center justify-center gap-2 sm:gap-3 px-6 sm:px-8 py-3 sm:py-4 bg-pw-blue hover:bg-blue-700 text-white rounded-full font-bold text-base sm:text-lg transition-all shadow-lg hover:shadow-xl hover:-translate-y-1"
               >
-                Book Free Consultation
+                Get in Touch!
                 <ArrowRight className="w-5 h-5" />
               </Link>
             </div>
