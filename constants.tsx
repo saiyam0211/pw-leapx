@@ -175,26 +175,26 @@ export const SERVICES: ServiceItem[] = [
 export const WORK_PROCESS: StepItem[] = [
   {
     id: 1,
-    title: 'Evaluation Call',
-    description: 'We begin with a quick discovery call to understand your goals, challenges, and the scope of work.',
+    title: 'Discovery Call',
+    description: 'We assess goals, scope, and execution readiness before engagement.',
     icon: PhoneCall
   },
   {
     id: 2,
     title: 'Expert Alignment',
-    description: "Once qualified, you're connected with the Lead who specialises in your specific requirement—Tech, Design, GTM, or Growth.",
+    description: "Qualified engagements are aligned with the right domain lead.",
     icon: Users
   },
   {
     id: 3,
-    title: 'Requirement Gathering & Planning',
-    description: 'Our team gathers detailed requirements and prepares a clear PRD or strategic work plan to ensure complete alignment.',
+    title: 'Scope & Execution Plan',
+    description: 'Clear scope, timelines, and milestones are defined upfront.',
     icon: ClipboardList
   },
   {
     id: 4,
     title: 'Agreement & Kickoff',
-    description: 'After finalising the agreement, we begin execution with full ownership and structured timelines.',
+    description: 'Selectively onboarded teams move into execution with full ownership.',
     icon: Rocket
   }
 ];
@@ -209,17 +209,17 @@ export const EXPERTS: ExpertProfile[] = [
     tags: ['Tech Expert', 'PW']
   },
   {
-    id: 'e2',
-    name: 'Nitin Manjunath',
-    role: 'Expert',
-    imageUrl: 'https://res.cloudinary.com/dlnyzjn5e/image/upload/v1751916666/NITIN_M_wr0ici.jpg',
-    tags: ['Tech Expert', 'PW']
-  },
-  {
     id: 'e3',
     name: 'Shubham Gautam',
     role: 'Founder EnjoyAlgorithms',
     imageUrl: 'https://res.cloudinary.com/dlnyzjn5e/image/upload/v1751916664/SHUBHAM_GAUTAM_dd7qyd.jpg',
+    tags: ['Tech Expert', 'PW']
+  },
+  {
+    id: 'e2',
+    name: 'Nitin Manjunath',
+    role: 'Expert',
+    imageUrl: 'https://res.cloudinary.com/dlnyzjn5e/image/upload/v1751916666/NITIN_M_wr0ici.jpg',
     tags: ['Tech Expert', 'PW']
   },
   {
@@ -254,49 +254,28 @@ export const EXPERTS: ExpertProfile[] = [
   {
     id: 'e9',
     name: 'Gopal Sharma',
-    role: 'Expert',
+    role: 'COO PhysicsWallah',
     imageUrl: 'https://res.cloudinary.com/dlnyzjn5e/image/upload/v1751916663/Gopal_Sharma_v0yfsp.jpg',
     tags: ['Management', 'PW']
   },
   {
     id: 'e10',
     name: 'Prakash Nimbalkar',
-    role: 'Expert',
+    role: 'GTM Advisor',
     imageUrl: 'https://res.cloudinary.com/dlnyzjn5e/image/upload/v1751916664/PRAKASH_NIMBALKAR_wduufa.jpg',
-    tags: ['Management', 'PW']
-  },
-  {
-    id: 'e11',
-    name: 'Amrit Raj',
-    role: 'Expert',
-    imageUrl: 'https://res.cloudinary.com/dlnyzjn5e/image/upload/v1751882059/1663932068913_deji6i.jpg',
-    tags: ['Management', 'PW']
-  },
-  {
-    id: 'e12',
-    name: 'Aditya Nema',
-    role: 'Expert',
-    imageUrl: 'https://res.cloudinary.com/dlnyzjn5e/image/upload/v1751882060/1748720082720_yge5qd.jpg',
     tags: ['Management', 'PW']
   },
   {
     id: 'e13',
     name: 'Dr. Sapna Nibsaiya',
-    role: 'Expert',
+    role: 'Marketing Strategist',
     imageUrl: 'https://res.cloudinary.com/dlnyzjn5e/image/upload/v1751916662/Dr._Sapna_Nibsaiya_yv7fpt.jpg',
-    tags: ['Management', 'PW']
-  },
-  {
-    id: 'e14',
-    name: 'Pankaj Kumar Jha',
-    role: 'Expert',
-    imageUrl: 'https://res.cloudinary.com/dlnyzjn5e/image/upload/v1751881472/120A7602_veqpyo.jpg',
     tags: ['Management', 'PW']
   },
   {
     id: 'e15',
     name: 'Raunaq Mustafa',
-    role: 'Expert',
+    role: 'Head, PW School of Startups',
     imageUrl: 'https://static.pw.live/5eb393ee95fab7468a79d189/ADMIN/d73443e5-a742-4290-b60c-d469ccc35ae2.png',
     tags: ['Management', 'PW']
   },
@@ -311,24 +290,24 @@ export const EXPERTS: ExpertProfile[] = [
   {
     id: 'e17',
     name: 'Rishabh Jain',
-    role: 'Expert',
+    role: 'Founding Team Member, LeapX',
     imageUrl: 'https://res.cloudinary.com/dsdcta1sr/image/upload/v1752414083/Rishabh_Jain_uk6ajq.svg',
     tags: ['POC', 'PW']
   },
   {
     id: 'e18',
     name: 'Kaiful Wara',
-    role: 'Expert',
+    role: 'Partnership Strategist, PW',
     imageUrl: 'https://res.cloudinary.com/dsdcta1sr/image/upload/v1752517778/Kaiful_Wara_ti6bt5.svg',
     tags: ['POC', 'PW']
   },
-  {
-    id: 'e19',
-    name: 'Saurabh Prasad',
-    role: 'Expert',
-    imageUrl: 'https://res.cloudinary.com/dsdcta1sr/image/upload/v1752414087/Saurabh_Prasad_mavqbb.svg',
-    tags: ['POC', 'PW']
-  }
+  // {
+  //   id: 'e19',
+  //   name: 'Saurabh Prasad',
+  //   role: 'Expert',
+  //   imageUrl: 'https://res.cloudinary.com/dsdcta1sr/image/upload/v1752414087/Saurabh_Prasad_mavqbb.svg',
+  //   tags: ['POC', 'PW']
+  // }
 ];
 
 export const BRANDS: BrandItem[] = [
@@ -409,14 +388,10 @@ export const FAQS: FaqItem[] = [
   },
   {
     question: "What is the cost?",
-    answer: "Our pricing is customized based on your startup's funding stage, project scope, and requirements. We offer flexible engagement models including project-based fixed pricing and dedicated resource retainer models. Contact us for a detailed quote tailored to your needs."
-  },
-  {
-    question: "How long does MVP take?",
-    answer: "MVP development timelines vary based on complexity and requirements, but we typically deliver MVPs within 4-8 weeks. Our rapid deployment approach ensures you get to market faster without compromising on quality."
+    answer: "Our pricing is structured around the scope, complexity, and execution effort of your engagement. We offer flexible models including fixed-scope projects and dedicated execution teams. Final pricing is shared post-evaluation to ensure clear alignment and predictable delivery."
   },
   {
     question: "Who handles execution?",
-    answer: "Our team of domain experts handles execution. Once qualified, you're connected with a Lead who specialises in your specific requirement—Tech, Design, GTM, or Growth. Our experts come from the PW network and bring battlefield experience to your startup."
+    answer: "Execution is led by a dedicated domain lead aligned to your requirement—technology, product, design, or growth—supported by an experienced LeapX team. Each engagement has clear ownership, with leaders drawn from the PW ecosystem and proven execution backgrounds."
   }
 ];

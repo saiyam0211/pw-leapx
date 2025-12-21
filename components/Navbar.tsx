@@ -39,8 +39,8 @@ const Navbar: React.FC = () => {
     <nav
       className={`fixed top-0 w-full z-50 transition-all duration-500 border-b ${
         isScrolled
-          ? 'bg-white/90 backdrop-blur-xl border-slate-200 py-2 sm:py-3 shadow-sm'
-          : 'bg-transparent border-transparent py-4 sm:py-6'
+          ? 'bg-white/90 backdrop-blur-xl border-slate-200 sm:py-3 shadow-sm'
+          : 'bg-transparent border-transparent py-2 sm:py-6'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
@@ -87,7 +87,7 @@ const Navbar: React.FC = () => {
         </div>
 
         {/* CTA Button */}
-        <div className="hidden lg:block">
+        {/* <div className="hidden lg:block">
             <a
               href="#booking"
               onClick={(e) => {
@@ -110,7 +110,7 @@ const Navbar: React.FC = () => {
             >
               Get in Touch <ArrowRight className="w-3 h-3 xl:w-4 xl:h-4" />
             </a>
-        </div>
+        </div> */}
 
         {/* Mobile Toggle */}
         <button
@@ -145,7 +145,9 @@ const Navbar: React.FC = () => {
             </a>
           ))}
           <a
-            href="#booking"
+            href="https://cal.com/rishabh-jain-euv7da/30min?overlayCalendar=true"
+            target="_blank"
+            rel="noopener noreferrer"
             className="mt-4 w-full bg-pw-blue text-white py-4 rounded-xl text-center font-bold shadow-lg shadow-blue-900/20 active:scale-95 transition-transform"
             onClick={handleLinkClick}
           >

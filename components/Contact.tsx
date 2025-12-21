@@ -45,13 +45,10 @@ const Contact: React.FC = () => {
                   </div>
                   <div>
                     <h4 className="font-bold text-slate-900 mb-1">Phone</h4>
-                    <a href="tel:+919876543210" className="text-slate-600 hover:text-pw-blue transition-colors">
-                      +91 94819 12068
+                    <a href="tel:+917240981514" className="text-slate-600 hover:text-pw-blue transition-colors">
+                      +91 72409 81514
                     </a>
-                    <span className="text-slate-600 ml-2 mr-2">|</span>
-                    <a href="tel:+919876543210" className="text-slate-600 hover:text-pw-blue transition-colors">
-                      +91 94819 12068
-                    </a>
+                    
                   </div>
                 </div>
               </div>
@@ -90,14 +87,9 @@ const Contact: React.FC = () => {
               </p>
               
               <a
-                href="#booking"
-                onClick={(e) => {
-                  e.preventDefault();
-                  const element = document.getElementById('booking');
-                  if (element) {
-                    element.scrollIntoView({ behavior: 'smooth' });
-                  }
-                }}
+                href="https://cal.com/rishabh-jain-euv7da/30min?overlayCalendar=true"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 sm:gap-3 bg-pw-blue text-white font-bold px-6 sm:px-8 py-3 sm:py-4 rounded-xl hover:bg-blue-700 transition-all shadow-md hover:shadow-lg hover:-translate-y-1 group text-sm sm:text-base"
               >
                 Get in Touch!

@@ -28,16 +28,18 @@ const ServiceDetail: React.FC = () => {
       {/* Hero Section */}
       <section className="relative pt-24 sm:pt-28 md:pt-32 pb-12 sm:pb-16 md:pb-20 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 overflow-hidden">
         {/* Background Image */}
-        {service.heroImage && (
-          <div className="absolute inset-0 z-0">
-            <img 
-              src={service.heroImage} 
-              alt={service.title}
-              className="w-full h-full object-cover opacity-20"
-            />
-            <div className="absolute inset-0 bg-gradient-to-br from-slate-950/90 via-slate-900/80 to-slate-950/90"></div>
-          </div>
-        )}
+        <div className="absolute inset-0 z-0">
+          <img 
+            src={
+              service.id === 'b2' ? '/DSC_2117.JPG' : 
+              service.category === 'Business' ? '/buisness-solutions.jpg' : 
+              service.heroImage
+            } 
+            alt={service.title}
+            className="w-full h-full object-cover opacity-20"
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-slate-950/90 via-slate-900/80 to-slate-950/90"></div>
+        </div>
         
         {/* Background Elements */}
         <div className="absolute inset-0 z-0 pointer-events-none">
@@ -79,23 +81,15 @@ const ServiceDetail: React.FC = () => {
               {service.overview || service.description}
             </p>
 
-            <Link
-              to="/#get-in-touch"
-              onClick={(e) => {
-                e.preventDefault();
-                window.location.href = '/#get-in-touch';
-                setTimeout(() => {
-                  const element = document.getElementById('get-in-touch');
-                  if (element) {
-                    element.scrollIntoView({ behavior: 'smooth' });
-                  }
-                }, 100);
-              }}
+            <a
+              href="https://cal.com/rishabh-jain-euv7da/30min?overlayCalendar=true"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 sm:gap-3 px-6 sm:px-8 py-3 sm:py-4 bg-pw-blue hover:bg-blue-700 text-white rounded-full font-bold text-base sm:text-lg transition-all shadow-[0_0_20px_rgba(30,58,138,0.3)] hover:shadow-[0_0_30px_rgba(30,58,138,0.5)] hover:-translate-y-1"
             >
               Get in Touch!
               <ArrowRight className="w-5 h-5" />
-            </Link>
+            </a>
           </motion.div>
         </div>
       </section>
@@ -160,23 +154,15 @@ const ServiceDetail: React.FC = () => {
               Let's discuss how {service.title} can accelerate your startup's growth. Schedule a free consultation with our experts.
             </p>
             <div className="flex flex-col sm:flex-row gap-5 justify-center">
-              <Link
-                to="/#get-in-touch"
-                onClick={(e) => {
-                  e.preventDefault();
-                  window.location.href = '/#get-in-touch';
-                  setTimeout(() => {
-                    const element = document.getElementById('get-in-touch');
-                    if (element) {
-                      element.scrollIntoView({ behavior: 'smooth' });
-                    }
-                  }, 100);
-                }}
+              <a
+                href="https://cal.com/rishabh-jain-euv7da/30min?overlayCalendar=true"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 sm:gap-3 px-6 sm:px-8 py-3 sm:py-4 bg-pw-blue hover:bg-blue-700 text-white rounded-full font-bold text-base sm:text-lg transition-all shadow-lg hover:shadow-xl hover:-translate-y-1"
               >
                 Get in Touch!
                 <ArrowRight className="w-5 h-5" />
-              </Link>
+              </a>
             </div>
           </motion.div>
         </div>

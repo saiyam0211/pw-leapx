@@ -16,10 +16,10 @@ const ProjectsPreview: React.FC = () => {
         <div className="text-center mb-12 sm:mb-16">
           <span className="text-pw-blue font-bold tracking-wider uppercase text-xs sm:text-sm">Our Work</span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 mt-2 mb-4">
-            Projects That <span className="text-transparent bg-clip-text bg-gradient-to-r from-pw-blue to-blue-500">Deliver Impact</span>
+          Projects Built <span className="text-transparent bg-clip-text bg-gradient-to-r from-pw-blue to-blue-500">to Deliver Impact</span>
           </h2>
           <p className="text-slate-600 text-base sm:text-lg max-w-2xl mx-auto">
-            From EdTech to FinTech, we build scalable platforms that drive real results
+          We build scalable, production-ready platforms that drive real business outcomes.
           </p>
         </div>
 

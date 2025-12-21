@@ -110,18 +110,20 @@ const Hero: React.FC = () => {
             className="flex flex-col sm:flex-row gap-5 w-full sm:w-auto"
           >
             <a
-              href="#services"
+              href="https://cal.com/rishabh-jain-euv7da/30min?overlayCalendar=true"
+              target="_blank"
+              rel="noopener noreferrer"
               className="group flex items-center justify-center gap-2 sm:gap-3 px-6 sm:px-8 py-3 sm:py-4 bg-pw-blue hover:bg-blue-700 text-white rounded-full font-bold text-base sm:text-lg transition-all shadow-[0_0_20px_rgba(30,58,138,0.3)] hover:shadow-[0_0_30px_rgba(30,58,138,0.5)] hover:-translate-y-1"
             >
-              Explore LeapX
+              Get in Touch
               <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
             </a>
-            <a
+            {/* <a
               href="#booking"
               className="flex items-center justify-center gap-2 sm:gap-3 px-6 sm:px-8 py-3 sm:py-4 bg-white/5 border border-white/10 hover:bg-white/10 text-white rounded-full font-medium text-base sm:text-lg transition-all backdrop-blur-sm hover:-translate-y-1"
             >
               Get in Touch
-            </a>
+            </a> */}
           </motion.div>
 
           {/* Decorative graphic: Idea to Execution */}

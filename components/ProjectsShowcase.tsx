@@ -7,7 +7,7 @@ import { PROJECTS } from '../projectsData';
 const ProjectsShowcase: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
   
-  const categories = ['All', 'EdTech', 'AI & Automation', 'HealthTech', 'FinTech'];
+  const categories = ['All', 'EdTech', 'AI & Automation', 'HealthTech', 'FinTech', 'Business Solutions'];
   
   const filteredProjects = selectedCategory === 'All' 
     ? PROJECTS 
@@ -158,39 +158,23 @@ const ProjectsShowcase: React.FC = () => {
               Let's create something exceptional together. Our team is ready to turn your vision into reality.
             </p>
             <div className="flex flex-col sm:flex-row gap-5 justify-center">
-              <Link
-                to="/#get-in-touch"
-                onClick={(e) => {
-                  e.preventDefault();
-                  window.location.href = '/#get-in-touch';
-                  setTimeout(() => {
-                    const element = document.getElementById('get-in-touch');
-                    if (element) {
-                      element.scrollIntoView({ behavior: 'smooth' });
-                    }
-                  }, 100);
-                }}
+              <a
+                href="https://cal.com/rishabh-jain-euv7da/30min?overlayCalendar=true"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-pw-blue hover:bg-blue-700 text-white rounded-full font-bold text-lg transition-all shadow-lg hover:shadow-xl hover:-translate-y-1"
               >
                 Get in Touch!
                 <ArrowLeft className="w-5 h-5 rotate-180" />
-              </Link>
-              <Link
-                to="/#get-in-touch"
-                onClick={(e) => {
-                  e.preventDefault();
-                  window.location.href = '/#get-in-touch';
-                  setTimeout(() => {
-                    const element = document.getElementById('get-in-touch');
-                    if (element) {
-                      element.scrollIntoView({ behavior: 'smooth' });
-                    }
-                  }, 100);
-                }}
+              </a>
+              <a
+                href="https://cal.com/rishabh-jain-euv7da/30min?overlayCalendar=true"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-white border-2 border-slate-200 hover:border-pw-blue text-slate-900 hover:text-pw-blue rounded-full font-bold text-lg transition-all hover:-translate-y-1"
               >
                 Get In Touch
-              </Link>
+              </a>
             </div>
           </motion.div>
         </div>

@@ -153,6 +153,23 @@ export const PROJECTS: Project[] = [
       'Events & announcements',
       'Improved UX'
     ]
+  },
+  {
+    id: 'digital-branding',
+    title: 'Digital Branding & Growth Execution',
+    description: 'Digital branding execution to build awareness, traction, and early revenue through strategic social media and performance marketing.',
+    screenshot: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop',
+    category: 'Business Solutions',
+    metrics: [
+      { label: 'Revenue Growth', value: '4X increase' },
+      { label: 'Audience Growth', value: '3.4X in 1.5 months' }
+    ],
+    features: [
+      'Social media strategy & content execution',
+      'Performance marketing & audience targeting',
+      'Brand awareness campaigns',
+      'Early revenue generation'
+    ]
   }
 ];
 

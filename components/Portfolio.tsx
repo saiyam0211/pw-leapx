@@ -10,8 +10,8 @@ const Portfolio: React.FC = () => {
   return (
     <section id="portfolio" className="py-16 sm:py-20 md:py-24 border-t border-slate-100 overflow-hidden scroll-mt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 mb-8 sm:mb-12 text-center">
-          <span className="text-blue-500 font-bold tracking-widest uppercase text-xs">Portfolio</span>
-          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-slate-900 mt-2">Products We've Built / Brands We've Supported</h2>
+          <span className="text-blue-500 font-bold tracking-widest uppercase text-xs">OUR WORK</span>
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-slate-900 mt-2">Proven Execution for Growing Ventures</h2>
       </div>
 
       <div className="relative w-full">

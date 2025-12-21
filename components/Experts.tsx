@@ -77,7 +77,7 @@ const Experts: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
-            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-8"
+            className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 sm:gap-6"
           >
             {getActiveExperts().map((expert, index) => (
               <motion.div
@@ -87,7 +87,7 @@ const Experts: React.FC = () => {
                 transition={{ duration: 0.5, delay: index * 0.05 }}
                 className="group relative"
               >
-                <div className="relative overflow-hidden rounded-2xl aspect-[4/5] bg-slate-100 mb-4">
+                <div className="relative overflow-hidden rounded-xl aspect-[4/5] bg-slate-100 mb-3">
                   <img 
                     src={expert.imageUrl} 
                     alt={expert.name} 
@@ -95,16 +95,16 @@ const Experts: React.FC = () => {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity"></div>
                   
-                  <div className="absolute top-4 right-4 flex flex-col gap-2 opacity-0 group-hover:opacity-100 transition-opacity transform translate-x-4 group-hover:translate-x-0 duration-300">
+                  <div className="absolute top-2 right-2 flex flex-col gap-1 opacity-0 group-hover:opacity-100 transition-opacity transform translate-x-4 group-hover:translate-x-0 duration-300">
                     {expert.tags.filter(tag => tag !== 'PW').map(tag => (
-                      <span key={tag} className="bg-white/90 backdrop-blur-sm text-slate-900 text-[10px] font-bold px-2 py-1 rounded shadow-sm text-center">
+                      <span key={tag} className="bg-white/90 backdrop-blur-sm text-slate-900 text-[9px] font-bold px-1.5 py-0.5 rounded shadow-sm text-center">
                         {tag}
                       </span>
                     ))}
                   </div>
                 </div>
-                <h3 className="text-lg sm:text-xl font-bold text-slate-900">{expert.name}</h3>
-                <p className="text-pw-blue font-medium text-xs sm:text-sm">{expert.role}</p>
+                <h3 className="text-sm sm:text-base font-bold text-slate-900">{expert.name}</h3>
+                <p className="text-pw-blue font-medium text-xs">{expert.role}</p>
               </motion.div>
             ))}
           </motion.div>

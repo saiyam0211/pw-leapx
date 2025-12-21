@@ -18,15 +18,19 @@ const About: React.FC = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <span className="inline-block py-1 px-3 rounded bg-blue-50 text-pw-blue font-bold tracking-wider uppercase text-xs mb-4">Who We Are</span>
+            {/* <span className="inline-block py-1 px-3 rounded bg-blue-50 text-pw-blue font-bold tracking-wider uppercase text-xs mb-4">Who We Are</span> */}
             <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-4 md:mb-6 leading-[1.15]">
               About <span className="text-transparent bg-clip-text bg-gradient-to-r from-pw-blue to-blue-500">PW LeapX</span>
             </h2>
             <div className="space-y-6 md:space-y-8 text-slate-600 text-base sm:text-lg leading-relaxed mb-6 md:mb-8">
               <div>
-                <h3 className="font-bold text-slate-900 text-lg sm:text-xl mb-2 sm:mb-3">Who We Are</h3>
+                {/* <h3 className="font-bold text-slate-900 text-lg sm:text-xl mb-2 sm:mb-3">Who We Are</h3> */}
                 <p>
-                LeapX acts as the extended execution arm for your venture, turning ideas into high-quality products and growth-ready brands. Led by top experts in tech and management, we bring end-to-end execution across software development, design, GTM, branding, and digital marketing.  
+                LeapX acts as the extended execution arm for your venture, turning ideas into
+high-quality products and growth-ready brands. An initiative by PW School of
+Startups , LeapX is led by seasoned experts across technology and
+management, delivering end-to-end execution spanning software
+development, design, and Digital branding
                 {/* <br/><br/><i>We don’t just deliver projects.</i>
                 <br/><b>We help you build, launch, and scale with confidence.</b> */}
                 </p>
@@ -50,16 +54,16 @@ const About: React.FC = () => {
                     <CheckCircle2 className="w-6 h-6 text-green-500 flex-shrink-0 mt-1" />
                     <div>
                         <h4 className="font-bold text-slate-900">Founder First</h4>
-                        <p className="text-sm text-slate-500">Terms designed for growth, not greed.</p>
+                        <p className="text-sm text-slate-500">Execution aligned with your growth stage.</p>
                     </div>
                 </div>
-                <div className="flex items-start gap-3">
+                {/* <div className="flex items-start gap-3">
                     <CheckCircle2 className="w-6 h-6 text-green-500 flex-shrink-0 mt-1" />
                     <div>
                         <h4 className="font-bold text-slate-900">Rapid Deployment</h4>
                         <p className="text-sm text-slate-500">MVPs in weeks, not months.</p>
                     </div>
-                </div>
+                </div> */}
             </div>
 
             <div className="mt-10 pt-10 border-t border-slate-100 grid grid-cols-2 gap-8">
