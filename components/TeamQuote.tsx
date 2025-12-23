@@ -9,7 +9,7 @@ const TeamQuote: React.FC = () => {
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-px h-32 bg-gradient-to-b from-slate-200 to-transparent"></div>
 
       <div className="max-w-[85rem] mx-auto px-4 sm:px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center">
           
           {/* Left Content */}
           <motion.div
@@ -17,13 +17,13 @@ const TeamQuote: React.FC = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="lg:col-span-4 -mt-80"
+            className="lg:col-span-4 lg:-mt-80"
           >
             <div className="flex items-center gap-2 mb-4">
               <Sparkles className="w-4 h-4 text-pw-blue" />
               <span className="text-pw-blue font-bold tracking-wider uppercase text-xs">Building Together</span>
             </div>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 leading-tight">
               Creating a<br />
               Community of<br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-pw-blue to-blue-500">
@@ -59,9 +59,9 @@ const TeamQuote: React.FC = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="lg:col-span-4 mt-64 "
+            className="lg:col-span-4 lg:mt-64"
           >
-            <div className="bg-[#f1f1f1] rounded-2xl p-6 sm:p-8 md:p-10 shadow-lg border border-slate-100">
+            <div className="bg-[#f1f1f1] rounded-xl sm:rounded-2xl p-5 sm:p-6 md:p-8 lg:p-10 shadow-lg border border-slate-100">
               {/* <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mb-3">
                 Hear From Our COO
               </h3> */}

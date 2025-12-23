@@ -8,8 +8,8 @@ const About: React.FC = () => {
         {/* Background Decorative Line */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-px h-32 bg-gradient-to-b from-transparent to-slate-200"></div>
 
-      <div className="max-w-[85rem] mx-auto px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+      <div className="max-w-[85rem] mx-auto px-4 sm:px-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 xl:gap-24 items-center">
           
           {/* Left Content */}
           <motion.div
@@ -66,10 +66,10 @@ development, design, and Digital branding
                 </div> */}
             </div>
 
-            <div className="mt-10 pt-10 border-t border-slate-100 grid grid-cols-2 gap-8">
+            <div className="mt-8 sm:mt-10 pt-8 sm:pt-10 border-t border-slate-100 grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
                 <div>
-                    <h3 className="font-bold text-3xl text-slate-900 mb-1">50+</h3>
-                    <p className="text-slate-500 text-sm uppercase tracking-wide">Products Delivered</p>
+                    <h3 className="font-bold text-2xl sm:text-3xl text-slate-900 mb-1">10+</h3>
+                    <p className="text-slate-500 text-xs sm:text-sm uppercase tracking-wide">Products Delivered</p>
                 </div>
                 <div className="flex items-center gap-2">
                     <motion.div
@@ -82,10 +82,10 @@ development, design, and Digital branding
                       <img 
                         src="/Physics_wallah_logo.svg.png" 
                         alt="Physics Wallah" 
-                        className="h-8 w-auto object-contain"
+                        className="h-6 sm:h-8 w-auto object-contain"
                       />
                     </motion.div>
-                    <p className="text-slate-500 text-sm uppercase tracking-wide">Backed Reliability</p>
+                    <p className="text-slate-500 text-xs sm:text-sm uppercase tracking-wide">Backed Reliability</p>
                 </div>
             </div>
           </motion.div>
@@ -98,19 +98,19 @@ development, design, and Digital branding
              transition={{ duration: 0.8 }}
              className="relative"
           >
-             <div className="absolute -inset-4 bg-slate-50 rounded-3xl transform rotate-3 -z-10"></div>
-             <div className="relative rounded-2xl overflow-hidden shadow-2xl h-[400px] sm:h-[450px] md:h-[500px] group">
+             <div className="absolute -inset-2 sm:-inset-4 bg-slate-50 rounded-2xl sm:rounded-3xl transform rotate-3 -z-10"></div>
+             <div className="relative rounded-xl sm:rounded-2xl overflow-hidden shadow-xl sm:shadow-2xl h-auto w-auto group">
                 <img 
-                    src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1632&q=80" 
+                    src="../public/about-us.png" 
                     alt="Team collaboration" 
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent flex items-end p-10">
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent flex items-end p-4 sm:p-6 md:p-10">
                     <div className="text-white transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
-                        <p className="font-semibold text-xl leading-relaxed">"Execution eats strategy for breakfast."</p>
-                        <div className="flex items-center gap-3 mt-4">
-                             <div className="h-0.5 w-12 bg-pw-blue"></div>
-                             <span className="text-sm opacity-90 font-medium tracking-wide uppercase">Our Philosophy</span>
+                        <p className="font-semibold text-base sm:text-lg md:text-xl leading-relaxed">"Execution eats strategy for breakfast."</p>
+                        <div className="flex items-center gap-2 sm:gap-3 mt-3 sm:mt-4">
+                             <div className="h-0.5 w-8 sm:w-12 bg-pw-blue"></div>
+                             <span className="text-xs sm:text-sm opacity-90 font-medium tracking-wide uppercase">Our Philosophy</span>
                         </div>
                     </div>
                 </div>

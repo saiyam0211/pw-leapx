@@ -12,17 +12,17 @@ const Process: React.FC = () => {
         <div className="absolute w-[500px] h-[500px] bg-purple-500 rounded-full blur-3xl bottom-0 right-0"></div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
-        <div className="text-center mb-12 sm:mb-16 md:mb-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+        <div className="text-center mb-8 sm:mb-12 md:mb-16">
             <span className="text-blue-400 font-bold tracking-wider uppercase text-xs sm:text-sm">How We Work</span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mt-2">From Evaluation to Execution</h2>
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mt-2 px-4">From Evaluation to Execution</h2>
         </div>
 
         <div className="relative">
           {/* Connecting Line (Desktop) */}
           {/* <div className="hidden lg:block absolute top-1/2 left-0 w-full h-0.5 bg-slate-700 -translate-y-1/2 z-0"></div> */}
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 md:gap-10">
             {WORK_PROCESS.map((step, index) => (
               <motion.div
                 key={step.id}
@@ -30,26 +30,31 @@ const Process: React.FC = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.2 }}
-                className="relative z-10 flex flex-col lg:items-center text-left lg:text-center group"
+                className="relative z-10 flex flex-col items-center text-center group bg-slate-800/30 p-5 sm:p-6 rounded-xl border border-slate-700/50 hover:border-blue-500/50 transition-all duration-300"
               >
-                {/* Icon Circle */}
-                <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-slate-800 border-2 border-slate-600 group-hover:border-blue-500 flex items-center justify-center text-slate-300 group-hover:text-blue-400 transition-all duration-300 shadow-lg mb-4 sm:mb-6 mx-auto lg:mx-auto lg:bg-slate-900">
-                  <step.icon className="w-6 h-6 sm:w-7 sm:h-7" />
+                {/* Step Number Badge - Mobile */}
+                <div className="absolute -top-3 -left-3 w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-sm font-bold border-2 border-slate-900 lg:hidden">
+                    {index + 1}
                 </div>
                 
-                {/* Step Number Bubble */}
-                <div className="hidden lg:flex absolute top-0 right-1/4 -translate-y-1/2 w-6 h-6 bg-blue-600 rounded-full items-center justify-center text-xs font-bold border-2 border-slate-900">
+                {/* Step Number Bubble - Desktop */}
+                <div className="hidden lg:flex absolute -top-3 -right-3 w-8 h-8 bg-blue-600 rounded-full items-center justify-center text-sm font-bold border-2 border-slate-900">
                     {index + 1}
                 </div>
 
-                <h3 className="text-lg sm:text-xl font-bold text-white mb-2 sm:mb-3">{step.title}</h3>
-                <p className="text-slate-400 text-xs sm:text-sm leading-relaxed max-w-xs mx-auto">
+                {/* Icon Circle */}
+                <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full bg-slate-900 border-2 border-slate-600 group-hover:border-blue-500 flex items-center justify-center text-slate-300 group-hover:text-blue-400 transition-all duration-300 shadow-lg mb-3 sm:mb-4">
+                  <step.icon className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7" />
+                </div>
+
+                <h3 className="text-base sm:text-lg md:text-xl font-bold text-white mb-2">{step.title}</h3>
+                <p className="text-slate-400 text-xs sm:text-sm leading-relaxed">
                   {step.description}
                 </p>
 
-                {/* Mobile Arrow */}
+                {/* Mobile Arrow - Between cards */}
                 {index < WORK_PROCESS.length - 1 && (
-                    <div className="lg:hidden absolute bottom-[-25px] left-8 transform translate-y-1/2 text-slate-600">
+                    <div className="md:hidden absolute -bottom-8 left-1/2 -translate-x-1/2 text-slate-600">
                         <ArrowRight className="w-5 h-5 rotate-90" />
                     </div>
                 )}

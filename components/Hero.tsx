@@ -16,7 +16,7 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Content Grid */}
-      <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 lg:gap-20 items-center relative z-10 w-full h-full">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-20 items-center relative z-10 w-full h-full">
         
         {/* Left Column: Video */}
         <motion.div 
@@ -43,18 +43,18 @@ const Hero: React.FC = () => {
                 </video>
 
                 {/* Video Overlays */}
-                <div className="absolute top-6 right-6 z-20">
-                    <div className="w-12 h-12 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center animate-pulse-slow">
-                        <Zap className="w-5 h-5 text-yellow-400 fill-yellow-400" />
+                <div className="absolute top-3 right-3 sm:top-6 sm:right-6 z-20">
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center animate-pulse-slow">
+                        <Zap className="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400 fill-yellow-400" />
                     </div>
                 </div>
 
-                <div className="absolute bottom-6 left-6 z-20 flex flex-col gap-2">
-                    <div className="flex items-center gap-3 bg-slate-950/60 backdrop-blur-md px-4 py-2 rounded-full border border-white/10 w-fit">
+                <div className="absolute bottom-3 left-3 sm:bottom-6 sm:left-6 z-20 flex flex-col gap-2">
+                    <div className="flex items-center gap-2 sm:gap-3 bg-slate-950/60 backdrop-blur-md px-3 py-1.5 sm:px-4 sm:py-2 rounded-full border border-white/10 w-fit">
                         <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse shadow-[0_0_10px_rgba(239,68,68,0.8)]"></div>
-                        <span className="text-xs font-bold text-white tracking-wider uppercase">Live Execution</span>
+                        <span className="text-[10px] sm:text-xs font-bold text-white tracking-wider uppercase">Live Execution</span>
                     </div>
-                    <p className="text-sm text-slate-300 font-medium pl-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300 translate-y-2 group-hover:translate-y-0">
+                    <p className="hidden sm:block text-sm text-slate-300 font-medium pl-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300 translate-y-2 group-hover:translate-y-0">
                         Founders at work
                     </p>
                 </div>
@@ -82,17 +82,17 @@ const Hero: React.FC = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-5xl sm:text-5xl md:text-5xl lg:text-5xl xl:text-5xl font-sans font-bold text-white mb-4 md:mb-6 leading-tight gap-2"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-sans font-bold text-white mb-4 md:mb-6 leading-tight"
           >
             Engineering Products,
-            <br className="hidden sm:block" />
-            <span className="block h-2"></span>
+            <br />
+            <span className="block h-1 sm:h-2"></span>
             Building
             <span className="text-transparent mt-1 bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-300 to-white ml-2">
               Brands
             </span>
-            <br className="hidden sm:block" />
-            <span className="block h-4"></span>
+            <br />
+            <span className="block h-2 sm:h-4"></span>
           </motion.h1>
 
           <motion.p
@@ -131,15 +131,17 @@ const Hero: React.FC = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.8 }}
-            className="mt-12 flex items-center gap-4 opacity-60"
+            className="mt-8 sm:mt-12 flex items-center gap-2 sm:gap-4 opacity-60 justify-center w-full"
           >
-            <div className="text-[10px] uppercase tracking-widest text-slate-500 font-semibold">Concept</div>
-            <div className="h-px w-12 bg-gradient-to-r from-slate-700 to-slate-500"></div>
-            <div className="w-8 h-8 rounded-full border border-slate-700 flex items-center justify-center">
-                <PlayCircle className="w-4 h-4 text-slate-400" />
+            <div className="mx-auto flex items-center gap-2 sm:gap-4">
+              <div className="text-[9px] sm:text-[10px] uppercase tracking-widest text-slate-500 font-semibold">Concept</div>
+              <div className="h-px w-8 sm:w-12 bg-gradient-to-r from-slate-700 to-slate-500"></div>
+              <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-full border border-slate-700 flex items-center justify-center">
+                <PlayCircle className="w-3 h-3 sm:w-4 sm:h-4 text-slate-400" />
+              </div>
+              <div className="h-px w-8 sm:w-12 bg-gradient-to-r from-slate-500 to-pw-blue"></div>
+              <div className="text-[9px] sm:text-[10px] uppercase tracking-widest text-blue-400 font-bold shadow-blue-500/50">Execution</div>
             </div>
-            <div className="h-px w-12 bg-gradient-to-r from-slate-500 to-pw-blue"></div>
-            <div className="text-[10px] uppercase tracking-widest text-blue-400 font-bold shadow-blue-500/50">Execution</div>
           </motion.div>
 
         </div>

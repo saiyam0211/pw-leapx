@@ -26,51 +26,51 @@ const Booking: React.FC = () => {
   return (
     <section id="booking" className="py-16 sm:py-20 md:py-24 bg-slate-50 relative scroll-mt-20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="bg-slate-900 rounded-2xl sm:rounded-[2.5rem] overflow-hidden shadow-2xl flex flex-col md:flex-row min-h-[500px] sm:min-h-[600px]">
+        <div className="bg-slate-900 rounded-xl sm:rounded-2xl lg:rounded-[2.5rem] overflow-hidden shadow-2xl flex flex-col md:flex-row min-h-[500px] sm:min-h-[600px]">
           
           {/* Left: Info */}
-          <div className="p-6 sm:p-10 md:p-12 lg:p-16 md:w-5/12 flex flex-col justify-between text-white relative overflow-hidden bg-gradient-to-br from-slate-900 to-slate-800">
+          <div className="p-5 sm:p-8 md:p-10 lg:p-12 xl:p-16 md:w-5/12 flex flex-col justify-between text-white relative overflow-hidden bg-gradient-to-br from-slate-900 to-slate-800">
              {/* Abstract background blobs */}
              <div className="absolute top-0 right-0 w-64 h-64 bg-blue-600/20 rounded-full blur-3xl -mr-16 -mt-16 animate-pulse-slow"></div>
              <div className="absolute bottom-0 left-0 w-64 h-64 bg-indigo-600/10 rounded-full blur-3xl -ml-16 -mb-16"></div>
              
              <div className="relative z-10">
-                <span className="inline-block py-1 px-3 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-300 text-xs font-bold uppercase tracking-wider mb-4 sm:mb-6">
+                <span className="inline-block py-1 px-2.5 sm:px-3 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-300 text-[10px] sm:text-xs font-bold uppercase tracking-wider mb-3 sm:mb-4 md:mb-6">
                     Get in Touch!
                 </span>
-                <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 leading-tight">Schedule a Call <br/>Instantly</h3>
-                <p className="text-slate-300 text-base sm:text-lg mb-6 sm:mb-8 leading-relaxed">
+                <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-2 sm:mb-3 md:mb-4 leading-tight">Schedule a Call <br/>Instantly</h3>
+                <p className="text-slate-300 text-sm sm:text-base md:text-lg mb-5 sm:mb-6 md:mb-8 leading-relaxed">
                   Schedule a free 30-minute evaluation call with our strategy leads. We'll audit your idea and propose an execution roadmap.
                 </p>
-                <ul className="space-y-5 text-slate-300">
-                    <li className="flex items-center gap-4">
-                        <div className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center flex-shrink-0">
-                            <Calendar className="w-5 h-5 text-blue-400" />
+                <ul className="space-y-3 sm:space-y-4 md:space-y-5 text-slate-300">
+                    <li className="flex items-center gap-3 sm:gap-4">
+                        <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center flex-shrink-0">
+                            <Calendar className="w-4 h-4 sm:w-5 sm:h-5 text-blue-400" />
                         </div>
-                        <span className="font-medium">Flexible availability</span>
+                        <span className="font-medium text-sm sm:text-base">Flexible availability</span>
                     </li>
-                    <li className="flex items-center gap-4">
-                        <div className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center flex-shrink-0">
-                            <Clock className="w-5 h-5 text-blue-400" />
+                    <li className="flex items-center gap-3 sm:gap-4">
+                        <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center flex-shrink-0">
+                            <Clock className="w-4 h-4 sm:w-5 sm:h-5 text-blue-400" />
                         </div>
-                        <span className="font-medium">30 Min Strategy Session</span>
+                        <span className="font-medium text-sm sm:text-base">30 Min Strategy Session</span>
                     </li>
                 </ul>
              </div>
 
-             <div className="mt-12 relative z-10">
-                 <div className="flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/10 backdrop-blur-sm">
-                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" className="w-12 h-12 rounded-full border-2 border-slate-700 object-cover" alt="Consultant" />
+             <div className="mt-8 sm:mt-10 md:mt-12 relative z-10">
+                 <div className="flex items-center gap-3 sm:gap-4 p-3 sm:p-4 rounded-lg sm:rounded-xl bg-white/5 border border-white/10 backdrop-blur-sm">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border-2 border-slate-700 object-cover" alt="Consultant" />
                     <div>
-                        <p className="text-sm font-bold text-white">Arjun Mehta</p>
-                        <p className="text-xs text-blue-200">Head of Tech Execution</p>
+                        <p className="text-xs sm:text-sm font-bold text-white">Arjun Mehta</p>
+                        <p className="text-[10px] sm:text-xs text-blue-200">Head of Tech Execution</p>
                     </div>
                  </div>
              </div>
           </div>
 
           {/* Right: Functional Form */}
-          <div className="bg-white p-6 sm:p-10 md:p-12 lg:p-16 md:w-7/12 relative">
+          <div className="bg-white p-5 sm:p-8 md:p-10 lg:p-12 xl:p-16 md:w-7/12 relative">
              <AnimatePresence mode='wait'>
                 {status === 'success' ? (
                     <motion.div 
@@ -101,44 +101,44 @@ const Booking: React.FC = () => {
                         onSubmit={handleSubmit}
                     >
                         <div>
-                            <h4 className="text-xl sm:text-2xl font-bold text-slate-900 mb-4 sm:mb-6">Enter your details</h4>
+                            <h4 className="text-lg sm:text-xl md:text-2xl font-bold text-slate-900 mb-3 sm:mb-4 md:mb-6">Enter your details</h4>
                         </div>
                         <div>
-                            <label className="block text-sm font-bold text-slate-700 mb-2">Full Name</label>
+                            <label className="block text-xs sm:text-sm font-bold text-slate-700 mb-2">Full Name</label>
                             <input 
                                 type="text" 
                                 required
                                 value={formState.name}
                                 onChange={(e) => setFormState({...formState, name: e.target.value})}
-                                className="w-full px-4 py-4 rounded-xl bg-slate-50 border border-slate-200 focus:border-pw-blue focus:ring-2 focus:ring-blue-100 outline-none transition-all font-medium text-slate-900 placeholder:text-slate-400" 
+                                className="w-full px-3 py-3 sm:px-4 sm:py-4 rounded-lg sm:rounded-xl bg-slate-50 border border-slate-200 focus:border-pw-blue focus:ring-2 focus:ring-blue-100 outline-none transition-all font-medium text-sm sm:text-base text-slate-900 placeholder:text-slate-400" 
                                 placeholder="John Doe" 
                             />
                         </div>
                         <div>
-                            <label className="block text-sm font-bold text-slate-700 mb-2">Company Email</label>
+                            <label className="block text-xs sm:text-sm font-bold text-slate-700 mb-2">Company Email</label>
                             <input 
                                 type="email" 
                                 required
                                 value={formState.email}
                                 onChange={(e) => setFormState({...formState, email: e.target.value})}
-                                className="w-full px-4 py-4 rounded-xl bg-slate-50 border border-slate-200 focus:border-pw-blue focus:ring-2 focus:ring-blue-100 outline-none transition-all font-medium text-slate-900 placeholder:text-slate-400" 
+                                className="w-full px-3 py-3 sm:px-4 sm:py-4 rounded-lg sm:rounded-xl bg-slate-50 border border-slate-200 focus:border-pw-blue focus:ring-2 focus:ring-blue-100 outline-none transition-all font-medium text-sm sm:text-base text-slate-900 placeholder:text-slate-400" 
                                 placeholder="john@startup.com" 
                             />
                         </div>
                         <div>
-                            <label className="block text-sm font-bold text-slate-700 mb-2">What are you looking for?</label>
+                            <label className="block text-xs sm:text-sm font-bold text-slate-700 mb-2">What are you looking for?</label>
                             <div className="relative">
                                 <select 
                                     value={formState.service}
                                     onChange={(e) => setFormState({...formState, service: e.target.value})}
-                                    className="w-full px-4 py-4 rounded-xl bg-slate-50 border border-slate-200 focus:border-pw-blue focus:ring-2 focus:ring-blue-100 outline-none transition-all font-medium text-slate-900 appearance-none cursor-pointer"
+                                    className="w-full px-3 py-3 sm:px-4 sm:py-4 rounded-lg sm:rounded-xl bg-slate-50 border border-slate-200 focus:border-pw-blue focus:ring-2 focus:ring-blue-100 outline-none transition-all font-medium text-sm sm:text-base text-slate-900 appearance-none cursor-pointer"
                                 >
                                     <option>Tech & MVP Development</option>
                                     <option>Data Analytics</option>
                                     <option>GTM Strategy</option>
                                     <option>General Consultation</option>
                                 </select>
-                                <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-slate-500">
+                                <div className="absolute right-3 sm:right-4 top-1/2 -translate-y-1/2 pointer-events-none text-slate-500">
                                     <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
                                 </div>
                             </div>
@@ -147,7 +147,7 @@ const Booking: React.FC = () => {
                             whileHover={{ scale: 1.01 }}
                             whileTap={{ scale: 0.99 }}
                             disabled={status === 'loading'}
-                            className={`w-full bg-pw-blue text-white font-bold py-4 rounded-xl shadow-xl shadow-blue-900/10 hover:shadow-2xl hover:shadow-blue-900/20 transition-all flex items-center justify-center gap-2 mt-4 ${status === 'loading' ? 'opacity-80 cursor-wait' : ''}`}
+                            className={`w-full bg-pw-blue text-white font-bold py-3 sm:py-4 rounded-lg sm:rounded-xl shadow-xl shadow-blue-900/10 hover:shadow-2xl hover:shadow-blue-900/20 transition-all flex items-center justify-center gap-2 mt-3 sm:mt-4 text-sm sm:text-base ${status === 'loading' ? 'opacity-80 cursor-wait' : ''}`}
                         >
                             {status === 'loading' ? (
                                 <><Loader2 className="w-5 h-5 animate-spin" /> Processing...</>

@@ -215,13 +215,13 @@ export const EXPERTS: ExpertProfile[] = [
     imageUrl: 'https://res.cloudinary.com/dlnyzjn5e/image/upload/v1751916664/SHUBHAM_GAUTAM_dd7qyd.jpg',
     tags: ['Tech Expert', 'PW']
   },
-  {
-    id: 'e2',
-    name: 'Nitin Manjunath',
-    role: 'Expert',
-    imageUrl: 'https://res.cloudinary.com/dlnyzjn5e/image/upload/v1751916666/NITIN_M_wr0ici.jpg',
-    tags: ['Tech Expert', 'PW']
-  },
+  // {
+  //   id: 'e2',
+  //   name: 'Nitin Manjunath',
+  //   role: 'Expert',
+  //   imageUrl: 'https://res.cloudinary.com/dlnyzjn5e/image/upload/v1751916666/NITIN_M_wr0ici.jpg',
+  //   tags: ['Tech Expert', 'PW']
+  // },
   {
     id: 'e4',
     name: 'Kaibalya Biswal',
@@ -229,20 +229,20 @@ export const EXPERTS: ExpertProfile[] = [
     imageUrl: 'https://res.cloudinary.com/dlnyzjn5e/image/upload/v1751916663/KAIBALYA_BISWAL__gzbush.jpg',
     tags: ['Tech Expert', 'PW']
   },
-  {
-    id: 'e5',
-    name: 'Syed Zabi Ulla',
-    role: 'Expert',
-    imageUrl: 'https://res.cloudinary.com/dlnyzjn5e/image/upload/v1751916665/SYED_ZABI_ULLA_gbhmh5.jpg',
-    tags: ['Tech Expert', 'PW']
-  },
-  {
-    id: 'e6',
-    name: 'Saurabh Moharikar',
-    role: 'Expert',
-    imageUrl: 'https://res.cloudinary.com/dlnyzjn5e/image/upload/v1751916664/SAURABH_MOHARIKAR_ubp8yy.jpg',
-    tags: ['Tech Expert', 'PW']
-  },
+  // {
+  //   id: 'e5',
+  //   name: 'Syed Zabi Ulla',
+  //   role: 'Expert',
+  //   imageUrl: 'https://res.cloudinary.com/dlnyzjn5e/image/upload/v1751916665/SYED_ZABI_ULLA_gbhmh5.jpg',
+  //   tags: ['Tech Expert', 'PW']
+  // },
+  // {
+  //   id: 'e6',
+  //   name: 'Saurabh Moharikar',
+  //   role: 'Expert',
+  //   imageUrl: 'https://res.cloudinary.com/dlnyzjn5e/image/upload/v1751916664/SAURABH_MOHARIKAR_ubp8yy.jpg',
+  //   tags: ['Tech Expert', 'PW']
+  // },
   // Management Experts (8 total)
   {
     id: 'e8',

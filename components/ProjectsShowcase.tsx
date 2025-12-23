@@ -167,14 +167,6 @@ const ProjectsShowcase: React.FC = () => {
                 Get in Touch!
                 <ArrowLeft className="w-5 h-5 rotate-180" />
               </a>
-              <a
-                href="https://cal.com/rishabh-jain-euv7da/30min?overlayCalendar=true"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-white border-2 border-slate-200 hover:border-pw-blue text-slate-900 hover:text-pw-blue rounded-full font-bold text-lg transition-all hover:-translate-y-1"
-              >
-                Get In Touch
-              </a>
             </div>
           </motion.div>
         </div>

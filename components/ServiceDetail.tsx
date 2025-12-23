@@ -28,18 +28,18 @@ const ServiceDetail: React.FC = () => {
       {/* Hero Section */}
       <section className="relative pt-24 sm:pt-28 md:pt-32 pb-12 sm:pb-16 md:pb-20 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 overflow-hidden">
         {/* Background Image */}
-        <div className="absolute inset-0 z-0">
-          <img 
+          <div className="absolute inset-0 z-0">
+            <img 
             src={
               service.id === 'b2' ? '/DSC_2117.JPG' : 
               service.category === 'Business' ? '/buisness-solutions.jpg' : 
               service.heroImage
             } 
-            alt={service.title}
-            className="w-full h-full object-cover opacity-20"
-          />
-          <div className="absolute inset-0 bg-gradient-to-br from-slate-950/90 via-slate-900/80 to-slate-950/90"></div>
-        </div>
+              alt={service.title}
+              className="w-full h-full object-cover opacity-20"
+            />
+            <div className="absolute inset-0 bg-gradient-to-br from-slate-950/90 via-slate-900/80 to-slate-950/90"></div>
+          </div>
         
         {/* Background Elements */}
         <div className="absolute inset-0 z-0 pointer-events-none">
