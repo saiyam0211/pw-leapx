@@ -245,13 +245,6 @@ export const EXPERTS: ExpertProfile[] = [
   // },
   // Management Experts (8 total)
   {
-    id: 'e8',
-    name: 'Himanshu Shekhar',
-    role: 'Director',
-    imageUrl: 'https://res.cloudinary.com/dlnyzjn5e/image/upload/v1751916663/Himanshu_Shekhar_ufdqok.jpg',
-    tags: ['Management', 'PW']
-  },
-  {
     id: 'e9',
     name: 'Gopal Sharma',
     role: 'COO PhysicsWallah',
@@ -259,10 +252,10 @@ export const EXPERTS: ExpertProfile[] = [
     tags: ['Management', 'PW']
   },
   {
-    id: 'e10',
-    name: 'Prakash Nimbalkar',
-    role: 'GTM Advisor',
-    imageUrl: 'https://res.cloudinary.com/dlnyzjn5e/image/upload/v1751916664/PRAKASH_NIMBALKAR_wduufa.jpg',
+    id: 'e15',
+    name: 'Raunaq Mustafa',
+    role: 'Head, PW School of Startups',
+    imageUrl: 'https://static.pw.live/5eb393ee95fab7468a79d189/ADMIN/d73443e5-a742-4290-b60c-d469ccc35ae2.png',
     tags: ['Management', 'PW']
   },
   {
@@ -273,12 +266,22 @@ export const EXPERTS: ExpertProfile[] = [
     tags: ['Management', 'PW']
   },
   {
-    id: 'e15',
-    name: 'Raunaq Mustafa',
-    role: 'Head, PW School of Startups',
-    imageUrl: 'https://static.pw.live/5eb393ee95fab7468a79d189/ADMIN/d73443e5-a742-4290-b60c-d469ccc35ae2.png',
+    id: 'e8',
+    name: 'Himanshu Shekhar',
+    role: 'Director',
+    imageUrl: 'https://res.cloudinary.com/dlnyzjn5e/image/upload/v1751916663/Himanshu_Shekhar_ufdqok.jpg',
     tags: ['Management', 'PW']
   },
+  
+  {
+    id: 'e10',
+    name: 'Prakash Nimbalkar',
+    role: 'GTM Advisor',
+    imageUrl: 'https://res.cloudinary.com/dlnyzjn5e/image/upload/v1751916664/PRAKASH_NIMBALKAR_wduufa.jpg',
+    tags: ['Management', 'PW']
+  },
+  
+  
   // POC Experts (4 total)
   {
     id: 'e16',
@@ -287,18 +290,19 @@ export const EXPERTS: ExpertProfile[] = [
     imageUrl: 'https://media.licdn.com/dms/image/v2/D5603AQFEVXRFd7Q1Xg/profile-displayphoto-shrink_800_800/B56ZbS2fJ.GoAk-/0/1747294222002?e=1767225600&v=beta&t=tmHWJ0OLHXbr2zVsacyhdYJi9rGzYE7Vm4xrAVPPhPg',
     tags: ['POC', 'PW']
   },
-  {
-    id: 'e17',
-    name: 'Rishabh Jain',
-    role: 'Founding Team Member, LeapX',
-    imageUrl: 'https://res.cloudinary.com/dsdcta1sr/image/upload/v1752414083/Rishabh_Jain_uk6ajq.svg',
-    tags: ['POC', 'PW']
-  },
+  
   {
     id: 'e18',
     name: 'Kaiful Wara',
     role: 'Partnership Strategist, PW',
     imageUrl: 'https://res.cloudinary.com/dsdcta1sr/image/upload/v1752517778/Kaiful_Wara_ti6bt5.svg',
+    tags: ['POC', 'PW']
+  },
+  {
+    id: 'e17',
+    name: 'Rishabh Jain',
+    role: 'Founding Team Member, LeapX',
+    imageUrl: 'https://res.cloudinary.com/dsdcta1sr/image/upload/v1752414083/Rishabh_Jain_uk6ajq.svg',
     tags: ['POC', 'PW']
   },
   // {
