@@ -89,7 +89,7 @@ export const PROJECTS: Project[] = [
     id: 'yourlabs',
     title: 'YourLabs (Doctor–Patient App)',
     description: 'A mobile platform for doctor-patient management, appointments, payments, and admin analytics.',
-    screenshot: '/Fintech project image.jpg',
+    screenshot: '/Doctor app project.jpg',
     category: 'HealthTech',
     metrics: [
       { label: 'Efficiency', value: '40% faster' },
