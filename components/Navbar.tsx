@@ -33,7 +33,7 @@ const Navbar: React.FC = () => {
   // Determine logo based on page and scroll state
   const logoSrc = isProjectsPage 
     ? '/PW_Leap_X_Black.svg'  // Always black on projects page
-    : (isScrolled ? '/PW_Leap_X_Black.svg' : '/PW_Leap_X_White.svg');
+    : (isScrolled ? '/PW_Leap_X_Black.svg' : '/main_logo.png');
 
   return (
     <nav

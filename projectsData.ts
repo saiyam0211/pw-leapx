@@ -18,7 +18,7 @@ export const PROJECTS: Project[] = [
     id: 'student-profile',
     title: 'Student Profile (ERP & LMS)',
     description: 'A centralized ERP & LMS platform for academic management enabling students, teachers, and administrators to collaborate and track academic performance.',
-    screenshot: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop',
+    screenshot: '/Student Portal Project Image.png',
     category: 'EdTech',
     metrics: [
       { label: 'Users', value: '1,500+' },
@@ -36,7 +36,7 @@ export const PROJECTS: Project[] = [
     id: 'coding-platform',
     title: 'Coding Platform',
     description: 'A high-performance coding platform for hosting contests, practice sessions, and assignments at scale.',
-    screenshot: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=2069&auto=format&fit=crop',
+    screenshot: '/Coding Platform project image.jpg',
     category: 'EdTech',
     metrics: [
       { label: 'Users', value: '2,000+' },
@@ -53,7 +53,7 @@ export const PROJECTS: Project[] = [
     id: 'koncite',
     title: 'Koncite (AI Construction Auditing)',
     description: 'An AI-powered voice-based auditing platform that converts multilingual inputs into structured audit reports.',
-    screenshot: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2076&auto=format&fit=crop',
+    screenshot: '/Koncite project image.jpg',
     category: 'AI & Automation',
     metrics: [
       { label: 'Users', value: '500+' },
@@ -89,7 +89,7 @@ export const PROJECTS: Project[] = [
     id: 'yourlabs',
     title: 'YourLabs (Doctor–Patient App)',
     description: 'A mobile platform for doctor-patient management, appointments, payments, and admin analytics.',
-    screenshot: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=2070&auto=format&fit=crop',
+    screenshot: '/Fintech project image.jpg',
     category: 'HealthTech',
     metrics: [
       { label: 'Efficiency', value: '40% faster' },
@@ -106,7 +106,7 @@ export const PROJECTS: Project[] = [
     id: 'fintech-app',
     title: 'Fintech App',
     description: 'A fintech app simplifying loan discovery, application, monitoring, and refinancing with AI recommendations.',
-    screenshot: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?q=80&w=2070&auto=format&fit=crop',
+    screenshot: '/Fintech project image.jpg',
     category: 'FinTech',
     metrics: [
       { label: 'Decision Speed', value: '55% faster' },
@@ -141,7 +141,7 @@ export const PROJECTS: Project[] = [
     id: 'pw-prerna',
     title: 'PW Prerna (Platform Revamp)',
     description: 'A redesigned engagement platform with AI-driven resources, assessments, events, and announcements.',
-    screenshot: 'https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2070&auto=format&fit=crop',
+    screenshot: '/pw prerna project image.jpg',
     category: 'EdTech',
     metrics: [
       { label: 'Engagement', value: '45% increase' },
@@ -158,7 +158,7 @@ export const PROJECTS: Project[] = [
     id: 'digital-branding',
     title: 'Digital Branding & Growth Execution',
     description: 'Digital branding execution to build awareness, traction, and early revenue through strategic social media and performance marketing.',
-    screenshot: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop',
+    screenshot: '/Digital Branding Project image.jpg',
     category: 'Business Solutions',
     metrics: [
       { label: 'Revenue Growth', value: '4X increase' },

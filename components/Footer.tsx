@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
              <div className="mb-4 sm:mb-5 flex justify-center sm:justify-start">
                <div className="w-28 sm:w-32 md:w-40">
                  <img
-                   src="/PW_Leap_X_White.svg"
+                   src="/main_logo.png"
                    alt="PW LeapX"
                    className="w-full h-auto object-contain"
                  />
@@ -97,11 +97,11 @@ const Footer: React.FC = () => {
             </div>
             
             {/* Credits Row */}
-            <div className="flex justify-center sm:justify-start pt-2 border-t border-slate-800/50">
+            {/* <div className="flex justify-center sm:justify-start pt-2 border-t border-slate-800/50">
                 <p className="text-[11px] sm:text-xs text-slate-500 text-center sm:text-left">
                   Coded with 🤍 by <a href="https://saiyam.cv" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors font-medium">Saiyam Kumar</a>
                 </p>
-            </div>
+            </div> */}
         </div>
       </div>
     </footer>

@@ -105,7 +105,7 @@ development, design, and Digital branding
                     alt="Team collaboration" 
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent flex items-end p-4 sm:p-6 md:p-10">
+                {/* <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent flex items-end p-4 sm:p-6 md:p-10">
                     <div className="text-white transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
                         <p className="font-semibold text-base sm:text-lg md:text-xl leading-relaxed">"Execution eats strategy for breakfast."</p>
                         <div className="flex items-center gap-2 sm:gap-3 mt-3 sm:mt-4">
@@ -113,7 +113,7 @@ development, design, and Digital branding
                              <span className="text-xs sm:text-sm opacity-90 font-medium tracking-wide uppercase">Our Philosophy</span>
                         </div>
                     </div>
-                </div>
+                </div> */}
              </div>
           </motion.div>
 

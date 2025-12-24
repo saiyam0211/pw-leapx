@@ -1,11 +1,24 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { ArrowLeft, CheckCircle2, TrendingUp, Users, Zap } from 'lucide-react';
+import { ArrowLeft, CheckCircle2, TrendingUp, Users, Zap, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { PROJECTS } from '../projectsData';
+import { PROJECTS, Project } from '../projectsData';
+import ProjectModal from './ProjectModal';
 
 const ProjectsShowcase: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleReadMore = (project: Project) => {
+    setSelectedProject(project);
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setTimeout(() => setSelectedProject(null), 200);
+  };
   
   const categories = ['All', 'EdTech', 'AI & Automation', 'HealthTech', 'FinTech', 'Business Solutions'];
   
@@ -127,7 +140,7 @@ const ProjectsShowcase: React.FC = () => {
                   </div>
 
                   {/* Key Features Preview */}
-                  <div className="space-y-2">
+                  <div className="space-y-2 mb-4">
                     {project.features.slice(0, 3).map((feature, idx) => (
                       <div key={idx} className="flex items-start gap-2">
                         <div className="w-1.5 h-1.5 rounded-full bg-pw-blue mt-2 flex-shrink-0"></div>
@@ -135,12 +148,28 @@ const ProjectsShowcase: React.FC = () => {
                       </div>
                     ))}
                   </div>
+
+                  {/* Read More Button */}
+                  <button
+                    onClick={() => handleReadMore(project)}
+                    className="inline-flex items-center gap-2 text-pw-blue hover:text-blue-700 font-semibold text-sm transition-colors group"
+                  >
+                    Read More
+                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  </button>
                 </div>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
+
+      {/* Modal */}
+      <ProjectModal 
+        project={selectedProject}
+        isOpen={isModalOpen}
+        onClose={handleCloseModal}
+      />
 
       {/* CTA Section */}
       <section className="py-16 sm:py-20 md:py-24 bg-gradient-to-br from-slate-50 to-white">

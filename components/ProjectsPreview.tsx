@@ -1,12 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, TrendingUp, Users } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { PROJECTS } from '../projectsData';
+import { PROJECTS, Project } from '../projectsData';
+import ProjectModal from './ProjectModal';
 
 const ProjectsPreview: React.FC = () => {
   // Show only first 3 projects
   const featuredProjects = PROJECTS.slice(0, 3);
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleReadMore = (project: Project) => {
+    setSelectedProject(project);
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setTimeout(() => setSelectedProject(null), 200);
+  };
 
   return (
     <section id="projects" className="py-16 sm:py-20 md:py-24 bg-white scroll-mt-20">
@@ -74,7 +87,7 @@ const ProjectsPreview: React.FC = () => {
                 </div>
 
                 {/* Key Features Preview */}
-                <div className="space-y-2">
+                <div className="space-y-2 mb-4">
                   {project.features.slice(0, 2).map((feature, idx) => (
                     <div key={idx} className="flex items-start gap-2">
                       <div className="w-1.5 h-1.5 rounded-full bg-pw-blue mt-2 flex-shrink-0"></div>
@@ -82,10 +95,26 @@ const ProjectsPreview: React.FC = () => {
                     </div>
                   ))}
                 </div>
+
+                {/* Read More Button */}
+                <button
+                  onClick={() => handleReadMore(project)}
+                  className="inline-flex items-center gap-2 text-pw-blue hover:text-blue-700 font-semibold text-sm transition-colors group"
+                >
+                  Read More
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </button>
               </div>
             </motion.div>
           ))}
         </div>
+
+        {/* Modal */}
+        <ProjectModal 
+          project={selectedProject}
+          isOpen={isModalOpen}
+          onClose={handleCloseModal}
+        />
 
         {/* View All Button */}
         <motion.div
