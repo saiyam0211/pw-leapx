@@ -40,7 +40,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-2 text-xs sm:text-sm">
                 <li><a href="/service/t1" className="hover:text-pw-blue transition-colors block py-0.5">Product & Platform Development</a></li>
                 <li><a href="/service/t3" className="hover:text-pw-blue transition-colors block py-0.5">Data & AI Solutions</a></li>
-                <li><a href="/service/t1" className="hover:text-pw-blue transition-colors block py-0.5">MVP & 0→1 Execution</a></li>
+                <li><a href="/service/t1" className="hover:text-pw-blue transition-colors block py-0.5">Building MVP</a></li>
                 <li><a href="/service/t6" className="hover:text-pw-blue transition-colors block py-0.5">Cloud & Infrastructure</a></li>
             </ul>
           </div>
