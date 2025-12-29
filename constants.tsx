@@ -212,7 +212,7 @@ export const EXPERTS: ExpertProfile[] = [
     id: 'e3',
     name: 'Shubham Gautam',
     role: 'Founder EnjoyAlgorithms',
-    imageUrl: 'https://res.cloudinary.com/dlnyzjn5e/image/upload/v1751916664/SHUBHAM_GAUTAM_dd7qyd.jpg',
+    imageUrl: 'https://res.cloudinary.com/ddsrcryja/image/upload/Gemini_Generated_Image_3nhl5r3nhl5r3nhl_biquy5',
     tags: ['Tech Expert', 'PW']
   },
   // {
@@ -223,12 +223,27 @@ export const EXPERTS: ExpertProfile[] = [
   //   tags: ['Tech Expert', 'PW']
   // },
   {
+    id: 'e5',
+    name: 'Sarthak Chauhan',
+    role: 'Tech Expert',
+    imageUrl: 'https://res.cloudinary.com/ddsrcryja/image/upload/Sarthak_Chauhan_ztr296',
+    tags: ['Tech Expert', 'PW']
+  },
+  {
+    id: 'e6',
+    name: 'Ashutosh Kumar',
+    role: 'Tech Expert',
+    imageUrl: 'https://res.cloudinary.com/ddsrcryja/image/upload/DSC08738_f8gayz',
+    tags: ['Tech Expert', 'PW']
+  },
+  {
     id: 'e4',
     name: 'Kaibalya Biswal',
     role: 'Expert',
     imageUrl: 'https://res.cloudinary.com/dlnyzjn5e/image/upload/v1751916663/KAIBALYA_BISWAL__gzbush.jpg',
     tags: ['Tech Expert', 'PW']
   },
+  
   // {
   //   id: 'e5',
   //   name: 'Syed Zabi Ulla',
@@ -302,7 +317,7 @@ export const EXPERTS: ExpertProfile[] = [
     id: 'e17',
     name: 'Rishabh Jain',
     role: 'Founding Team Member, LeapX',
-    imageUrl: 'https://res.cloudinary.com/dsdcta1sr/image/upload/v1752414083/Rishabh_Jain_uk6ajq.svg',
+    imageUrl: 'https://res.cloudinary.com/ddsrcryja/image/upload/DSC08760_kmaqix', 
     tags: ['POC', 'PW']
   },
   // {

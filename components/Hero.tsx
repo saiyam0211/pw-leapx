@@ -26,38 +26,22 @@ const Hero: React.FC = () => {
            className="order-2 lg:order-1 relative group"
         >
             {/* Video Container */}
-            <div className="relative rounded-2xl lg:rounded-[2rem] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-slate-800 bg-slate-900 aspect-video lg:aspect-[4/3] transform transition-transform duration-700 hover:scale-[1.01]">
+            <div className="relative rounded-2xl lg:rounded-[2rem] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-slate-800 bg-slate-900 aspect-video lg:aspect-[4/3] transform transition-transform duration-700 hover:scale-[1.01] flex items-center justify-center">
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent z-10 pointer-events-none"></div>
                 
-                {/* Fallback Image & Video */}
-                <video 
-                  autoPlay 
-                  muted 
-                  loop 
-                  playsInline
-                  className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-500"
-                  poster="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
-                >
-                  <source src="https://assets.mixkit.co/videos/preview/mixkit-people-working-in-a-start-up-office-4034-large.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-
-                {/* Video Overlays */}
-                <div className="absolute top-3 right-3 sm:top-6 sm:right-6 z-20">
-                    <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center animate-pulse-slow">
-                        <Zap className="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400 fill-yellow-400" />
-                    </div>
-                </div>
-
-                <div className="absolute bottom-3 left-3 sm:bottom-6 sm:left-6 z-20 flex flex-col gap-2">
-                    <div className="flex items-center gap-2 sm:gap-3 bg-slate-950/60 backdrop-blur-md px-3 py-1.5 sm:px-4 sm:py-2 rounded-full border border-white/10 w-fit">
-                        <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse shadow-[0_0_10px_rgba(239,68,68,0.8)]"></div>
-                        <span className="text-[10px] sm:text-xs font-bold text-white tracking-wider uppercase">Live Execution</span>
-                    </div>
-                    <p className="hidden sm:block text-sm text-slate-300 font-medium pl-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300 translate-y-2 group-hover:translate-y-0">
-                        Founders at work
-                    </p>
-                </div>
+                {/* Embedded YouTube Video with Infinite Looping (via YouTube playlist embedding) */}
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/SepCXKKFcTY?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&showinfo=0&iv_load_policy=3&enablejsapi=1&loop=1&playlist=SepCXKKFcTY"
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                  className="w-full h-full object-cover"
+                  style={{ minHeight: "230px", minWidth: "350px" }}
+                ></iframe>
             </div>
 
             {/* Decorative Elements behind video */}
@@ -82,7 +66,7 @@ const Hero: React.FC = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-sans font-bold text-white mb-4 md:mb-6 leading-tight"
+            className="text-4xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-5xl font-sans font-bold text-white mb-4 md:mb-6 leading-tight"
           >
             Engineering Products,
             <br />
