@@ -205,7 +205,7 @@ export const EXPERTS: ExpertProfile[] = [
     id: 'e1',
     name: 'Janishar Ali',
     role: 'VP, Ex-Founder CuriousJr',
-    imageUrl: 'https://res.cloudinary.com/dlnyzjn5e/image/upload/v1751916664/Janishar_Ali_Anwar_vhenm4.jpg',
+    imageUrl: 'https://res.cloudinary.com/ddsrcryja/image/upload/image_eoofvy',
     tags: ['Tech Expert', 'PW']
   },
   {
