@@ -302,7 +302,7 @@ export const EXPERTS: ExpertProfile[] = [
     id: 'e16',
     name: 'Vikas Bhansali',
     role: 'Head-Corporate Partnership',
-    imageUrl: 'https://media.licdn.com/dms/image/v2/D5603AQFEVXRFd7Q1Xg/profile-displayphoto-shrink_800_800/B56ZbS2fJ.GoAk-/0/1747294222002?e=1767225600&v=beta&t=tmHWJ0OLHXbr2zVsacyhdYJi9rGzYE7Vm4xrAVPPhPg',
+    imageUrl: 'https://res.cloudinary.com/ddsrcryja/image/upload/Vikas_Sir_image_for_Website_lzow9u',
     tags: ['POC', 'PW']
   },
   
